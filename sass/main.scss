@@ -4,6 +4,12 @@ $color-note : #fcdfdb;
 $color-chic : #fff5fe;
 $color-delice : #f9f9f9;
 $color-palette : #fdfffd;
+$color_menu-note:#3c1218;
+$color_menu-chic:#c77412;
+$color_menu-delice:#0887fb;
+$color_menu-palette: #72bf56;
+
+$shake-intensity: 1%;
 
 @mixin bg-color($color : $color-bg) {
     background-color: $color;
@@ -26,9 +32,12 @@ $color-palette : #fdfffd;
 }
 
 @mixin shadows-box {
-    box-shadow: 1px 1px 7px 1px #BDBDBD;
+    box-shadow: 0 0 1em #e2e2e2;
 }
 
+@mixin color-font-note {
+    color: #3c1218;
+}
 @mixin color-font-chic {
    background : -webkit-linear-gradient(10deg, #FF9100, #3D5AFE );
   -webkit-background-clip : text;
@@ -48,6 +57,10 @@ $color-palette : #fdfffd;
 *{
     margin: 0;
 }
+a{
+    text-decoration: none;
+    list-style: none;
+}
 
 header{
     @include bg-color();
@@ -60,85 +73,141 @@ header{
         font-size: 3em;
     }
 }
-main{
-   a{
-       text-decoration: none;
-       list-style: none;
-   }
-    .block-up{
-        display: flex;
-        justify-content: space-evenly;
-        padding: 50px;
-.note{
-    
-    @include bg-color($color-note);
-    @include font-note();
-    width: 40%;
-    height: 500px;
-    @include shadows-box();
-    
 
+.section-up, .section-down{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 50px 30px 30px 30px;
+    .main-article{
+        text-align: center;
+        width: 40%;
+        height: 500px;
+    }
+    .article1{
+        @include bg-color($color-note);
+    }
+    .article2{
+        @include bg-color($color-chic);
+    }
+    .article3{
+        @include bg-color($color-delice);
+    }
+    .article4{
+        @include bg-color($color-palette);
+    }
+    .shadow{
+        @include shadows-box();
+    }
 }
-.chic{
-    @include bg-color($color-chic);
-    @include font-chic();
-    width: 40%;
-    height: 500px;
-    @include shadows-box();
-    text-align: center;
-    
-    h4{
+.titre{
+    font-size: 2em;
+    padding: 10px;
+}
+    .h4-1{
+        @include font-note();
+        @include color-font-note();
+    }
+    .h4-2{
+        @include font-chic();
         @include color-font-chic();
-        font-size: 2em;
-        padding-top : 200px ;
-        
     }
-    h3{
-        font-size: 3em;
-        color: #c77412;
+    .h4-3{
+        @include font-papille();
+        @include color-font-papille()
     }
-    
+    .h4-4{
+        @include font-palette();
+        @include color-font-palette();
+    }
+    .h3-1{
+        color: $color_menu-note;
+        @include font-palette();
+        text-transform: uppercase;
+    }
+    .h3-2{
+        color: $color_menu-chic;
+    }
+    .h3-3{
+        color: $color_menu-delice;
+        @include font-palette();
+    }
+    .h3-4{
+        color: $color_menu-palette;
+        @include font-palette();
+    }
+    .zoom{
+        display: block;
+    :hover{
+        animation : zoom-opacity 200ms linear forwards;
+    }
 }
+
+
+
+
+ footer{
+     @include bg-color();
+     height: 50px;
+     display: flex;
+     justify-content: space-between;
+     padding-right: 50px;
+     padding-left: 50px;
+     padding-top: 20px;
+     @include bg-font();
+
+     :hover{
+        animation: headshake 100ms cubic-bezier(.4,.1,.6,.9) 2;
+     }
+     a{
+         text-decoration: none;
+         list-style: none;
+         color: $color-bg-txt;
+         font-size: 1.5em;
+     }
+ }
+
+ .prochainement{
+     display: flex;
+     margin: auto auto 40px auto;
+     border-radius: 4px 6px 4px 6px;
+     @include bg-color();
+     width: 20%;
+     height: 40px;
+     .prochainement-txt{
+         @include bg-font();
+         color: $color-bg-txt;
+         margin: auto;
+         font-size: 1.3em;
+     }
+ }
+
+
+
+
+@keyframes headshake {
+    25% {
+        
+        transform: translateX($shake-intensity);
+    }
+    75% {
+        
+        transform: translateX($shake-intensity * -1);
+    }
+}
+
+@keyframes zoom-opacity {
+    0% {
+        opacity: 0.5;
+        transform: scale(1);
     }
 
-    .block-down{
-            display: flex;
-            justify-content: space-evenly;;
-            padding : 50px;
-.delice{
-    @include bg-color($color-delice);
-    @include font-papille();
-    width: 40%;
-    height: 500px;
-    @include shadows-box();
-    text-align: center;
-    h4{
-        @include color-font-papille();
-        font-size: 2em;
-        padding-top : 200px ;
+    50% {
+        opacity: 0.8;
+        transform: scale(1.1);
     }
-    h3{
-        font-size: 3em;
-        color: #0887fb;
-    }
-   
-}
-.palette{
-    @include bg-color($color-palette);
-    @include font-palette();
-    width: 40%;
-    height: 500px;
-    @include shadows-box();
-    text-align: center;
-    h4{
-        @include color-font-palette();
-        font-size: 2em;
-        padding-top : 200px ;
-    }
-    h3{
-        font-size: 3em;
-        color: #72bf56;
-    }
-}
+
+    100% {
+        opacity: 1;
+        transform: scale(1.2);
     }
 }

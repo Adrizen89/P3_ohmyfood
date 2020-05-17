@@ -1,0 +1,144 @@
+$color-bg : #579c87;
+$color-bg-txt : #fdcb46;
+$color-note : #fcdfdb;
+$color-chic : #fff5fe;
+$color-delice : #f9f9f9;
+$color-palette : #fdfffd;
+
+@mixin bg-color($color : $color-bg) {
+    background-color: $color;
+}
+@mixin bg-font {
+    font-family: 'Spartan', sans-serif;
+}
+
+@mixin font-note {
+    font-family: 'Zhi Mang Xing', cursive;
+}
+@mixin font-chic{
+    font-family: 'Croissant One', cursive;
+}
+@mixin font-papille{
+    font-family: 'Dancing Script', cursive;
+}
+@mixin font-palette{
+    font-family: 'Kaushan Script', cursive;
+}
+
+@mixin shadows-box {
+    box-shadow: 1px 1px 7px 1px #BDBDBD;
+}
+
+@mixin color-font-chic {
+   background : -webkit-linear-gradient(10deg, #FF9100, #3D5AFE );
+  -webkit-background-clip : text;
+  -webkit-text-fill-color: transparent;
+}
+@mixin color-font-papille {
+    background: -webkit-linear-gradient(10deg, #0D47A1 , #29B6F6 );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@mixin color-font-palette {
+    background: -webkit-linear-gradient(10deg, #43A047 , #C6FF00 );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+*{
+    margin: 0;
+}
+
+header{
+    @include bg-color();
+    height: 100px;
+    h1{
+        text-align: center;
+        padding-top: 25px;
+        color: $color-bg-txt;
+        @include bg-font();
+        font-size: 3em;
+    }
+}
+main{
+   a{
+       text-decoration: none;
+       list-style: none;
+   }
+    .block-up{
+        display: flex;
+        justify-content: space-evenly;
+        padding: 50px;
+.note{
+    
+    @include bg-color($color-note);
+    @include font-note();
+    width: 40%;
+    height: 500px;
+    @include shadows-box();
+    
+
+}
+.chic{
+    @include bg-color($color-chic);
+    @include font-chic();
+    width: 40%;
+    height: 500px;
+    @include shadows-box();
+    text-align: center;
+    
+    h4{
+        @include color-font-chic();
+        font-size: 2em;
+        padding-top : 200px ;
+        
+    }
+    h3{
+        font-size: 3em;
+        color: #c77412;
+    }
+    
+}
+    }
+
+    .block-down{
+            display: flex;
+            justify-content: space-evenly;;
+            padding : 50px;
+.delice{
+    @include bg-color($color-delice);
+    @include font-papille();
+    width: 40%;
+    height: 500px;
+    @include shadows-box();
+    text-align: center;
+    h4{
+        @include color-font-papille();
+        font-size: 2em;
+        padding-top : 200px ;
+    }
+    h3{
+        font-size: 3em;
+        color: #0887fb;
+    }
+   
+}
+.palette{
+    @include bg-color($color-palette);
+    @include font-palette();
+    width: 40%;
+    height: 500px;
+    @include shadows-box();
+    text-align: center;
+    h4{
+        @include color-font-palette();
+        font-size: 2em;
+        padding-top : 200px ;
+    }
+    h3{
+        font-size: 3em;
+        color: #72bf56;
+    }
+}
+    }
+}

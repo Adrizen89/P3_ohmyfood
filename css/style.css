@@ -1,0 +1,80 @@
+* {
+  margin: 0; }
+
+header {
+  background-color: #579c87;
+  height: 100px; }
+  header h1 {
+    text-align: center;
+    padding-top: 25px;
+    color: #fdcb46;
+    font-family: 'Spartan', sans-serif;
+    font-size: 3em; }
+
+main a {
+  text-decoration: none;
+  list-style: none; }
+main .block-up {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 50px; }
+  main .block-up .note {
+    background-color: #fcdfdb;
+    font-family: 'Zhi Mang Xing', cursive;
+    width: 40%;
+    height: 500px;
+    box-shadow: 1px 1px 7px 1px #BDBDBD; }
+  main .block-up .chic {
+    background-color: #fff5fe;
+    font-family: 'Croissant One', cursive;
+    width: 40%;
+    height: 500px;
+    box-shadow: 1px 1px 7px 1px #BDBDBD;
+    text-align: center; }
+    main .block-up .chic h4 {
+      background: -webkit-linear-gradient(10deg, #FF9100, #3D5AFE);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: 2em;
+      padding-top: 200px; }
+    main .block-up .chic h3 {
+      font-size: 3em;
+      color: #c77412; }
+main .block-down {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 50px; }
+  main .block-down .delice {
+    background-color: #f9f9f9;
+    font-family: 'Dancing Script', cursive;
+    width: 40%;
+    height: 500px;
+    box-shadow: 1px 1px 7px 1px #BDBDBD;
+    text-align: center; }
+    main .block-down .delice h4 {
+      background: -webkit-linear-gradient(10deg, #0D47A1, #29B6F6);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: 2em;
+      padding-top: 200px; }
+    main .block-down .delice h3 {
+      font-size: 3em;
+      color: #0887fb; }
+  main .block-down .palette {
+    background-color: #fdfffd;
+    font-family: 'Kaushan Script', cursive;
+    width: 40%;
+    height: 500px;
+    box-shadow: 1px 1px 7px 1px #BDBDBD;
+    text-align: center; }
+    main .block-down .palette h4 {
+      background: -webkit-linear-gradient(10deg, #43A047, #C6FF00);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: 2em;
+      padding-top: 200px; }
+    main .block-down .palette h3 {
+      font-size: 3em;
+      color: #72bf56; }
+
+/*# sourceMappingURL=style.css.map */

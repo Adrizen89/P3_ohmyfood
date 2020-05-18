@@ -145,6 +145,9 @@ footer {
 .article-note {
   background-color: #fcdfdb; }
 
+.article-chic {
+  background-color: #fff5fe; }
+
 .shadow {
   box-shadow: 0 0 1em #e2e2e2; }
 
@@ -156,6 +159,13 @@ p {
 
 .title-menu {
   font-size: 3.5em; }
+
+.title-chic {
+  font-size: 2em;
+  background: -webkit-linear-gradient(10deg, #FF9100, #3D5AFE);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-top: 100px; }
 
 .h3-note {
   font-family: 'Zhi Mang Xing', cursive;
@@ -173,11 +183,13 @@ p {
   font-family: 'Kaushan Script', cursive; }
 
 .main-table {
-  margin: auto;
+  margin-left: 50px;
   padding: 30px;
   font-size: 1.5em; }
-  .main-table .table-txt {
+  .main-table .table-txt-note {
     padding-right: 200px; }
+  .main-table .table-txt-chic {
+    padding-right: 100px; }
 
 .table-note {
   font-family: 'Zhi Mang Xing', cursive;
@@ -191,5 +203,37 @@ p {
   justify-content: center; }
   .footer-note img {
     width: 80px; }
+
+.table-chic {
+  font-family: 'Croissant One', cursive; }
+  .table-chic td {
+    padding-bottom: 20px; }
+
+.main-th {
+  font-size: 1em; }
+
+.main-tr {
+  font-size: 0.8em; }
+
+.th-chic {
+  padding: 40px; }
+
+.th-chic-entre {
+  color: #d08b3c; }
+
+.th-chic-plat {
+  color: #a56799; }
+
+.th-chic-dessert {
+  color: #6e4ccc; }
+
+.tr-chic-entre {
+  color: #d08b3c; }
+
+.tr-chic-plat {
+  color: #a56799; }
+
+.tr-chic-dessert {
+  color: #6e4ccc; }
 
 /*# sourceMappingURL=style.css.map */

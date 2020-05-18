@@ -40,25 +40,29 @@ header {
 
 .h4-1 {
   font-family: 'Zhi Mang Xing', cursive;
-  color: #3c1218; }
+  color: #3c1218;
+  padding-top: 200px; }
 
 .h4-2 {
   font-family: 'Croissant One', cursive;
   background: -webkit-linear-gradient(10deg, #FF9100, #3D5AFE);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; }
+  -webkit-text-fill-color: transparent;
+  padding-top: 200px; }
 
 .h4-3 {
   font-family: 'Dancing Script', cursive;
   background: -webkit-linear-gradient(10deg, #0D47A1, #29B6F6);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; }
+  -webkit-text-fill-color: transparent;
+  padding-top: 200px; }
 
 .h4-4 {
   font-family: 'Kaushan Script', cursive;
   background: -webkit-linear-gradient(10deg, #43A047, #C6FF00);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; }
+  -webkit-text-fill-color: transparent;
+  padding-top: 200px; }
 
 .h3-1 {
   color: #3c1218;
@@ -126,5 +130,45 @@ footer {
   100% {
     opacity: 1;
     transform: scale(1.2); } }
+.main-title {
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  font-family: 'Spartan', sans-serif; }
+
+.main-big-article {
+  width: 80%;
+  height: 1000px;
+  margin: auto; }
+
+.article-note {
+  background-color: #fcdfdb; }
+
+.shadow {
+  box-shadow: 0 0 1em #e2e2e2; }
+
+p {
+  text-align: center;
+  padding-top: 50px; }
+  p .noteimg {
+    width: 150px; }
+
+.title-menu {
+  font-size: 3em; }
+
+.h3-note {
+  font-family: 'Zhi Mang Xing', cursive;
+  color: #3c1218;
+  text-align: center;
+  letter-spacing: 1px;
+  padding-bottom: 20px; }
+
+.eat-title {
+  text-align: center;
+  font-size: 1.5em; }
+
+.note-title-eat {
+  color: #3c1218;
+  font-family: 'Kaushan Script', cursive; }
 
 /*# sourceMappingURL=style.css.map */

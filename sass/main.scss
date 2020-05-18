@@ -234,6 +234,9 @@ header{
     .article-note{
         @include bg-color($color-note);
     }
+    .article-chic{
+        @include bg-color($color-chic);
+    }
     .shadow{
         @include shadows-box();
     }
@@ -246,6 +249,11 @@ header{
 }
     .title-menu{
         font-size: 3.5em;
+    }
+    .title-chic{
+        font-size: 2em;
+        @include color-font-chic();
+        padding-top: 100px;
     }
     .h3-note{
         @include font-note();
@@ -265,12 +273,16 @@ header{
     }
 
     .main-table{
-        margin: auto;
+        margin-left: 50px;
         padding: 30px;
         font-size: 1.5em;
-        .table-txt{
+        .table-txt-note{
             padding-right: 200px;
         }
+        .table-txt-chic{
+            padding-right: 100px;
+        }
+        
     }
     .table-note{
         @include font-note();
@@ -286,5 +298,41 @@ header{
             width: 80px;
         }
         
+    }
+    .table-chic{
+        @include font-chic();
+        td{
+            padding-bottom: 20px;
+        }
+    }
+
+    
+    .main-th{
+        font-size: 1em;
+    }
+    .main-tr{
+        font-size: 0.8em;
+    }
+    .th-chic{
+        padding: 40px;
+    }
+    
+    .th-chic-entre{
+        color: #d08b3c;
+    }
+    .th-chic-plat{
+        color: #a56799;
+    }
+    .th-chic-dessert{
+        color: #6e4ccc;
+    }
+    .tr-chic-entre{
+        color: #d08b3c;
+    }
+    .tr-chic-plat{
+        color: #a56799;
+    }
+    .tr-chic-dessert{
+        color: #6e4ccc;
     }
 

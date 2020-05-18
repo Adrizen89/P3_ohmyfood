@@ -106,18 +106,22 @@ header{
     .h4-1{
         @include font-note();
         @include color-font-note();
+        padding-top: 200px;
     }
     .h4-2{
         @include font-chic();
         @include color-font-chic();
+        padding-top: 200px;
     }
     .h4-3{
         @include font-papille();
-        @include color-font-papille()
+        @include color-font-papille();
+        padding-top: 200px;
     }
     .h4-4{
         @include font-palette();
         @include color-font-palette();
+        padding-top: 200px;
     }
     .h3-1{
         color: $color_menu-note;
@@ -211,3 +215,51 @@ header{
         transform: scale(1.2);
     }
 }
+
+
+
+
+    .main-title{
+        text-align: center;
+        padding-top: 40px;
+        padding-bottom: 20px;
+        @include bg-font();
+    }
+    .main-big-article{
+        width: 80%;
+        height: 1000px;
+        margin: auto;
+    }
+    .article-note{
+        @include bg-color($color-note);
+    }
+    .shadow{
+        @include shadows-box();
+    }
+    p{
+        text-align: center;
+        padding-top: 50px;
+        .noteimg{
+        width: 150px;
+    }
+}
+    .title-menu{
+        font-size: 3em;
+    }
+    .h3-note{
+        @include font-note();
+        @include color-font-note();
+        text-align: center;
+        letter-spacing: 1px;
+        padding-bottom: 20px;
+    }
+
+    .eat-title{
+        text-align: center;
+        font-size: 1.5em;
+    }
+    .note-title-eat{
+        @include color-font-note();
+        @include font-palette();
+    }
+

@@ -25,6 +25,9 @@ header {
     height: 500px; }
   .section-up .article1, .section-down .article1 {
     background-color: #fcdfdb; }
+    .section-up .article1 p img, .section-down .article1 p img {
+      width: 150px;
+      padding-top: 100px; }
   .section-up .article2, .section-down .article2 {
     background-color: #fff5fe; }
   .section-up .article3, .section-down .article3 {
@@ -33,6 +36,10 @@ header {
     background-color: #fdfffd; }
   .section-up .shadow, .section-down .shadow {
     box-shadow: 0 0 1em #e2e2e2; }
+  .section-up .zoom:hover, .section-down .zoom:hover {
+    animation: zoom 100ms linear forwards; }
+  .section-up .zoom_index:hover, .section-down .zoom_index:hover {
+    -webkit-animation: zoom 100ms linear forwards; }
 
 .titre {
   font-size: 2em;
@@ -40,8 +47,7 @@ header {
 
 .h4-1 {
   font-family: 'Zhi Mang Xing', cursive;
-  color: #3c1218;
-  padding-top: 200px; }
+  color: #3c1218; }
 
 .h4-2 {
   font-family: 'Croissant One', cursive;
@@ -67,32 +73,36 @@ header {
 .h3-1 {
   color: #3c1218;
   font-family: 'Kaushan Script', cursive;
-  text-transform: uppercase; }
+  padding-bottom: 130px; }
 
 .h3-2 {
-  color: #c77412; }
+  color: #c77412;
+  padding-bottom: 180px; }
 
 .h3-3 {
   color: #0887fb;
-  font-family: 'Kaushan Script', cursive; }
+  font-family: 'Kaushan Script', cursive;
+  padding-bottom: 190px; }
 
 .h3-4 {
   color: #72bf56;
-  font-family: 'Kaushan Script', cursive; }
-
-.zoom {
-  display: block; }
-  .zoom :hover {
-    animation: zoom-opacity 200ms linear forwards; }
+  font-family: 'Kaushan Script', cursive;
+  padding-bottom: 170px; }
 
 footer {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
   background-color: #579c87;
-  height: 50px;
+  height: 30px;
   display: flex;
   justify-content: space-between;
   padding-right: 50px;
   padding-left: 50px;
-  padding-top: 20px;
+  padding-top: 10px;
   font-family: 'Spartan', sans-serif; }
   footer :hover {
     animation: headshake 100ms cubic-bezier(0.4, 0.1, 0.6, 0.9) 2; }
@@ -100,35 +110,44 @@ footer {
     text-decoration: none;
     list-style: none;
     color: #fdcb46;
-    font-size: 1.5em; }
+    font-size: 1em; }
 
-.prochainement {
-  display: flex;
-  margin: auto auto 40px auto;
+.btn-prochainement {
+  width: 20%;
+  height: 40px;
+  margin: auto;
+  margin-bottom: 40px;
   border-radius: 4px 6px 4px 6px;
   background-color: #579c87;
-  width: 20%;
-  height: 40px; }
-  .prochainement .prochainement-txt {
-    font-family: 'Spartan', sans-serif;
-    color: #fdcb46;
-    margin: auto;
-    font-size: 1.3em; }
+  display: flex;
+  justify-content: center; }
+  .btn-prochainement a {
+    padding-top: 10px; }
 
 @keyframes headshake {
   25% {
     transform: translateX(1%); }
   75% {
     transform: translateX(-1%); } }
-@keyframes zoom-opacity {
+@keyframes zoom {
   0% {
-    opacity: 0.5;
+    opacity: 1;
     transform: scale(1); }
   50% {
     opacity: 0.8;
     transform: scale(1.1); }
   100% {
+    opacity: 0.5;
+    transform: scale(1.2); } }
+@-webkit-keyframes zoom {
+  0% {
     opacity: 1;
+    transform: scale(1); }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.1); }
+  100% {
+    opacity: 0.5;
     transform: scale(1.2); } }
 .main-title {
   text-align: center;
@@ -143,10 +162,17 @@ footer {
   margin-bottom: 80px; }
 
 .article-note {
-  background-color: #fcdfdb; }
+  background-color: #fcdfdb;
+  height: 1400px; }
 
 .article-chic {
   background-color: #fff5fe; }
+
+.article-palette {
+  background-color: #fdfffd; }
+
+.article-delice {
+  background-color: #f9f9f9; }
 
 .shadow {
   box-shadow: 0 0 1em #e2e2e2; }
@@ -167,20 +193,21 @@ p {
   -webkit-text-fill-color: transparent;
   padding-top: 100px; }
 
-.h3-note {
-  font-family: 'Zhi Mang Xing', cursive;
-  color: #3c1218;
-  text-align: center;
-  letter-spacing: 1px;
-  padding-bottom: 20px; }
+.title-palette {
+  background: -webkit-linear-gradient(10deg, #43A047, #C6FF00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-top: 50px; }
 
-.eat-title {
-  text-align: center;
-  font-size: 1.7em; }
+.title-delice {
+  background: -webkit-linear-gradient(10deg, #0D47A1, #29B6F6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-top: 50px;
+  font-size: 3.7em; }
 
-.note-title-eat {
-  color: #3c1218;
-  font-family: 'Kaushan Script', cursive; }
+.title-note {
+  font-size: 2.7em; }
 
 .main-table {
   margin-left: 50px;
@@ -190,10 +217,47 @@ p {
     padding-right: 200px; }
   .main-table .table-txt-chic {
     padding-right: 100px; }
+  .main-table .table-txt-palette {
+    padding-right: 100px; }
+  .main-table .table-txt-delice {
+    padding-right: 30px; }
 
 .table-note {
   font-family: 'Zhi Mang Xing', cursive;
-  color: #3c1218; }
+  color: #3c1218;
+  margin: auto; }
+  .table-note td {
+    padding-bottom: 20px;
+    font-size: 1em;
+    font-family: 'Kalam', cursive; }
+  .table-note th {
+    font-size: 1.4em;
+    font-family: 'Kalam', cursive; }
+
+.table-palette {
+  font-family: 'Kaushan Script', cursive;
+  margin: auto; }
+  .table-palette td {
+    padding-bottom: 20px;
+    font-family: 'Kalam', cursive; }
+  .table-palette th {
+    font-family: 'Kalam', cursive; }
+
+.table-chic {
+  font-family: 'Croissant One', cursive; }
+  .table-chic td {
+    padding-bottom: 20px; }
+
+.table-delice {
+  font-family: 'Dancing Script', cursive;
+  margin: auto; }
+  .table-delice td {
+    font-size: 1.2em;
+    padding-bottom: 10px;
+    font-family: 'Kalam', cursive; }
+  .table-delice th {
+    font-size: 1.3em;
+    font-family: 'Kalam', cursive; }
 
 .footer-note {
   font-family: 'Zhi Mang Xing', cursive;
@@ -204,19 +268,26 @@ p {
   .footer-note img {
     width: 80px; }
 
-.table-chic {
-  font-family: 'Croissant One', cursive; }
-  .table-chic td {
-    padding-bottom: 20px; }
-
 .main-th {
   font-size: 1em; }
 
 .main-tr {
   font-size: 0.8em; }
 
+.th-note {
+  padding-bottom: 30px;
+  padding-top: 40px; }
+
 .th-chic {
   padding: 40px; }
+
+.th-palette {
+  padding-top: 50px;
+  padding-bottom: 30px; }
+
+.th-delice {
+  padding-top: 30px;
+  padding-bottom: 30px; }
 
 .th-chic-entre {
   color: #d08b3c; }

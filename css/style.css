@@ -113,17 +113,41 @@ footer {
     font-size: 1em; }
 
 .btn-prochainement {
-  width: 20%;
-  height: 40px;
+  width: 30%;
+  height: 80px;
   margin: auto;
-  margin-bottom: 40px;
-  border-radius: 4px 6px 4px 6px;
+  margin-bottom: 70px;
+  border-radius: 10px;
   background-color: #579c87;
   display: flex;
   justify-content: center; }
-  .btn-prochainement a {
-    padding-top: 10px; }
+  .btn-prochainement .txt-prochainement {
+    padding-top: 25px;
+    text-decoration: none;
+    list-style: none;
+    color: #fdcb46;
+    font-family: 'Spartan', sans-serif;
+    font-size: 1.6em; }
 
+.btn-prochainement:after {
+  overflow: hidden;
+  position: absolute;
+  right: 450px;
+  color: #fdcb46;
+  font-size: 3em;
+  display: inline-block;
+  vertical-align: bottom;
+  -webkit-animation: ellipsis steps(4, end) 2s infinite;
+  animation: ellipsis steps(4, end) 2s infinite;
+  content: "\2026";
+  width: 0px; }
+
+@keyframes ellipsis {
+  to {
+    width: 60px; } }
+@-webkit-keyframes ellipsis {
+  to {
+    width: 60px; } }
 @keyframes headshake {
   25% {
     transform: translateX(1%); }

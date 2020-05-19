@@ -301,6 +301,8 @@ p {
 .th-note {
   padding-bottom: 30px;
   padding-top: 40px; }
+  .th-note :hover {
+    animation: progress-bar 1000ms; }
 
 .th-chic {
   padding: 40px; }
@@ -330,5 +332,112 @@ p {
 
 .tr-chic-dessert {
   color: #6e4ccc; }
+
+@keyframes progress-bar {
+  0% {
+    transform: scaleX(0); }
+  100% {
+    transform: scaleX(1); } }
+.th-note {
+  position: relative; }
+
+.th-note::before {
+  content: "";
+  position: absolute;
+  bottom: 30px;
+  left: 290px;
+  width: 0;
+  height: 0.1em;
+  transition: 500ms ease-in-out; }
+
+.th-note:hover::before {
+  left: 290px;
+  width: 200px;
+  background-color: #000; }
+
+.th-chic-entre {
+  position: relative; }
+
+.th-chic-entre::before {
+  content: "";
+  position: absolute;
+  bottom: 30px;
+  left: 150px;
+  width: 0;
+  height: 0.1em;
+  transition: 500ms ease-in-out; }
+
+.th-chic-entre:hover::before {
+  left: 150px;
+  width: 450px;
+  background-color: #d08b3c; }
+
+.th-chic-plat {
+  position: relative; }
+
+.th-chic-plat::before {
+  content: "";
+  position: absolute;
+  bottom: 30px;
+  left: 150px;
+  width: 0;
+  height: 0.1em;
+  transition: 500ms ease-in-out; }
+
+.th-chic-plat:hover::before {
+  left: 150px;
+  width: 450px;
+  background-color: #a56799; }
+
+.th-chic-dessert {
+  position: relative; }
+
+.th-chic-dessert::before {
+  content: "";
+  position: absolute;
+  bottom: 30px;
+  left: 150px;
+  width: 0;
+  height: 0.1em;
+  transition: 500ms ease-in-out; }
+
+.th-chic-dessert:hover::before {
+  left: 150px;
+  width: 450px;
+  background-color: #6e4ccc; }
+
+.th-delice {
+  position: relative; }
+
+.th-delice::before {
+  content: "";
+  position: absolute;
+  bottom: 30px;
+  left: 170px;
+  width: 0;
+  height: 0.1em;
+  transition: 500ms ease-in-out; }
+
+.th-delice:hover::before {
+  left: 170px;
+  width: 340px;
+  background-color: #000; }
+
+.th-palette {
+  position: relative; }
+
+.th-palette::before {
+  content: "";
+  position: absolute;
+  bottom: 30px;
+  left: 200px;
+  width: 0;
+  height: 0.1em;
+  transition: 500ms ease-in-out; }
+
+.th-palette:hover::before {
+  left: 200px;
+  width: 280px;
+  background-color: #000; }
 
 /*# sourceMappingURL=style.css.map */

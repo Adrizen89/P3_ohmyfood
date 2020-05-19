@@ -30,6 +30,9 @@ $shake-intensity: 1%;
 @mixin font-palette{
     font-family: 'Kaushan Script', cursive;
 }
+@mixin font-menu {
+    font-family: 'Kalam', cursive;
+}
 
 @mixin shadows-box {
     box-shadow: 0 0 1em #e2e2e2;
@@ -85,6 +88,13 @@ header{
     }
     .article1{
         @include bg-color($color-note);
+        p{
+            img{
+                width: 150px;
+                padding-top: 100px;
+            }
+        }
+    
     }
     .article2{
         @include bg-color($color-chic);
@@ -98,6 +108,15 @@ header{
     .shadow{
         @include shadows-box();
     }
+
+    .zoom:hover {
+        animation: zoom 100ms linear forwards;
+        
+    }
+    
+    .zoom_index:hover {
+        -webkit-animation: zoom 100ms linear forwards;
+    }
 }
 .titre{
     font-size: 2em;
@@ -106,7 +125,7 @@ header{
     .h4-1{
         @include font-note();
         @include color-font-note();
-        padding-top: 200px;
+        
     }
     .h4-2{
         @include font-chic();
@@ -126,37 +145,41 @@ header{
     .h3-1{
         color: $color_menu-note;
         @include font-palette();
-        text-transform: uppercase;
+        padding-bottom: 130px;
     }
     .h3-2{
         color: $color_menu-chic;
+        padding-bottom: 180px;
     }
     .h3-3{
         color: $color_menu-delice;
         @include font-palette();
+        padding-bottom: 190px;
     }
     .h3-4{
         color: $color_menu-palette;
         @include font-palette();
+        padding-bottom: 170px;
     }
-    .zoom{
-        display: block;
-    :hover{
-        animation : zoom-opacity 200ms linear forwards;
-    }
-}
+    
 
 
 
-
- footer{
+footer{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 0 ;
+    padding: 0 ;
+ 
      @include bg-color();
-     height: 50px;
+     height: 30px;
      display: flex;
      justify-content: space-between;
      padding-right: 50px;
      padding-left: 50px;
-     padding-top: 20px;
+     padding-top: 10px;
      @include bg-font();
 
      :hover{
@@ -166,23 +189,27 @@ header{
          text-decoration: none;
          list-style: none;
          color: $color-bg-txt;
-         font-size: 1.5em;
+         font-size: 1em;
      }
- }
+ 
+}
 
- .prochainement{
-     display: flex;
-     margin: auto auto 40px auto;
-     border-radius: 4px 6px 4px 6px;
-     @include bg-color();
+ .btn-prochainement{
+    
      width: 20%;
      height: 40px;
-     .prochainement-txt{
-         @include bg-font();
-         color: $color-bg-txt;
-         margin: auto;
-         font-size: 1.3em;
+     margin: auto;
+     margin-bottom: 40px;
+     border-radius: 4px 6px 4px 6px;
+     @include bg-color();
+     display: flex;
+     justify-content: center;
+     a{
+         padding-top: 10px;
      }
+    
+     
+     
  }
 
 
@@ -199,9 +226,9 @@ header{
     }
 }
 
-@keyframes zoom-opacity {
+@keyframes zoom {
     0% {
-        opacity: 0.5;
+        opacity: 1;
         transform: scale(1);
     }
 
@@ -211,7 +238,23 @@ header{
     }
 
     100% {
+        opacity: 0.5;
+        transform: scale(1.2);
+    }
+}
+@-webkit-keyframes zoom {
+    0% {
         opacity: 1;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 0.8;
+        transform: scale(1.1);
+    }
+
+    100% {
+        opacity: 0.5;
         transform: scale(1.2);
     }
 }
@@ -233,9 +276,16 @@ header{
     }
     .article-note{
         @include bg-color($color-note);
+        height: 1400px;
     }
     .article-chic{
         @include bg-color($color-chic);
+    }
+    .article-palette{
+        @include bg-color($color-palette);
+    }
+    .article-delice{
+        @include bg-color($color-delice);
     }
     .shadow{
         @include shadows-box();
@@ -255,22 +305,20 @@ header{
         @include color-font-chic();
         padding-top: 100px;
     }
-    .h3-note{
-        @include font-note();
-        @include color-font-note();
-        text-align: center;
-        letter-spacing: 1px;
-        padding-bottom: 20px;
+    .title-palette{
+        @include color-font-palette();
+        padding-top: 50px;
     }
-
-    .eat-title{
-        text-align: center;
-        font-size: 1.7em;
+    .title-delice{
+        @include color-font-papille();
+        padding-top: 50px;
+        font-size: 3.7em;
     }
-    .note-title-eat{
-        @include color-font-note();
-        @include font-palette();
+    .title-note{
+        font-size: 2.7em;
     }
+    
+    
 
     .main-table{
         margin-left: 50px;
@@ -282,11 +330,57 @@ header{
         .table-txt-chic{
             padding-right: 100px;
         }
+        .table-txt-palette{
+            padding-right: 100px;
+        }
+        .table-txt-delice{
+            padding-right: 30px;
+        }
         
     }
     .table-note{
         @include font-note();
         @include color-font-note();
+        margin: auto;
+        td{
+            padding-bottom: 20px;
+            font-size: 1em;
+            @include font-menu();
+        }
+        th{
+            font-size: 1.4em;
+            @include font-menu();
+        }
+    }
+    .table-palette{
+        @include font-palette();
+        margin: auto;
+        td{
+            padding-bottom: 20px;
+            @include font-menu();
+        }
+        th{
+            @include font-menu();
+        }
+    }
+    .table-chic{
+        @include font-chic();
+        td{
+            padding-bottom: 20px;
+        }
+    }
+    .table-delice{
+        @include font-papille();
+        margin: auto;
+        td{
+            font-size: 1.2em;
+            padding-bottom: 10px;
+            @include font-menu();
+        }
+        th{
+            font-size: 1.3em;
+            @include font-menu();
+        }
     }
     .footer-note{
         @include font-note();
@@ -299,12 +393,7 @@ header{
         }
         
     }
-    .table-chic{
-        @include font-chic();
-        td{
-            padding-bottom: 20px;
-        }
-    }
+    
 
     
     .main-th{
@@ -313,8 +402,20 @@ header{
     .main-tr{
         font-size: 0.8em;
     }
+    .th-note{
+        padding-bottom: 30px;
+        padding-top: 40px;
+    }
     .th-chic{
         padding: 40px;
+    }
+    .th-palette{
+        padding-top: 50px;
+        padding-bottom: 30px;
+    }
+    .th-delice{
+        padding-top: 30px;
+        padding-bottom: 30px;
     }
     
     .th-chic-entre{
@@ -326,6 +427,7 @@ header{
     .th-chic-dessert{
         color: #6e4ccc;
     }
+
     .tr-chic-entre{
         color: #d08b3c;
     }
@@ -336,3 +438,4 @@ header{
         color: #6e4ccc;
     }
 
+    

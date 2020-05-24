@@ -5,6 +5,9 @@ a {
   text-decoration: none;
   list-style: none; }
 
+li {
+  list-style: none; }
+
 header {
   background-color: #579c87;
   height: 100px; }
@@ -233,18 +236,6 @@ p {
 .title-note {
   font-size: 2.7em; }
 
-.main-table {
-  padding: 30px;
-  font-size: 1.5em; }
-  .main-table .table-txt-note {
-    padding-right: 100px; }
-  .main-table .table-txt-chic {
-    padding-right: 100px; }
-  .main-table .table-txt-palette {
-    padding-right: 100px; }
-  .main-table .table-txt-delice {
-    padding-right: 30px; }
-
 .table-note {
   font-family: 'Zhi Mang Xing', cursive;
   color: #3c1218;
@@ -293,12 +284,6 @@ p {
   .footer-note img {
     width: 80px; }
 
-.main-th {
-  font-size: 1em; }
-
-.main-tr {
-  font-size: 0.8em; }
-
 .th-note {
   padding-bottom: 30px;
   padding-top: 40px; }
@@ -317,7 +302,7 @@ p {
   padding-top: 30px;
   padding-bottom: 30px; }
 
-.th-chic-entre {
+.h4-chic-entre {
   color: #d08b3c; }
 
 .th-chic-plat {
@@ -357,10 +342,10 @@ p {
   width: 200px;
   background-color: #000; }
 
-.th-chic-entre {
+.h4-chic-entre {
   position: relative; }
 
-.th-chic-entre::before {
+.h4-chic-entre::before {
   content: "";
   position: absolute;
   bottom: 30px;
@@ -369,7 +354,7 @@ p {
   height: 0.1em;
   transition: 500ms ease-in-out; }
 
-.th-chic-entre:hover::before {
+.h4-chic-entre:hover::before {
   left: 150px;
   width: 450px;
   background-color: #d08b3c; }
@@ -442,18 +427,18 @@ p {
   width: 280px;
   background-color: #000; }
 
-.th-border-note img {
-  width: 30%; }
-.th-border-note .border-left {
-  padding-right: 55px; }
-.th-border-note .border-right {
-  padding-left: 55px; }
+.flex {
+  display: flex;
+  width: 100%;
+  margin-left: 50px; }
 
-.th-border-chic img {
-  width: 40%; }
-.th-border-chic .border-left {
-  margin-right: 100px; }
-.th-border-chic .border-right {
-  margin-left: 100px; }
+.list-noms {
+  font-size: 1.3em; }
+
+.list-prix {
+  font-size: 1.3em; }
+
+.entre {
+  margin-right: 200px; }
 
 /*# sourceMappingURL=style.css.map */

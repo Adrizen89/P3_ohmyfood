@@ -234,11 +234,10 @@ p {
   font-size: 2.7em; }
 
 .main-table {
-  margin-left: 50px;
   padding: 30px;
   font-size: 1.5em; }
   .main-table .table-txt-note {
-    padding-right: 200px; }
+    padding-right: 100px; }
   .main-table .table-txt-chic {
     padding-right: 100px; }
   .main-table .table-txt-palette {
@@ -249,7 +248,7 @@ p {
 .table-note {
   font-family: 'Zhi Mang Xing', cursive;
   color: #3c1218;
-  margin: auto; }
+  margin: 0 50px 0 50px; }
   .table-note td {
     padding-bottom: 20px;
     font-size: 1em;
@@ -270,7 +269,9 @@ p {
 .table-chic {
   font-family: 'Croissant One', cursive; }
   .table-chic td {
-    padding-bottom: 20px; }
+    padding-bottom: 20px;
+    padding-left: 50px;
+    padding-right: 50px; }
 
 .table-delice {
   font-family: 'Dancing Script', cursive;
@@ -305,7 +306,9 @@ p {
     animation: progress-bar 1000ms; }
 
 .th-chic {
-  padding: 40px; }
+  display: flex;
+  flex-direction: row;
+  width: 100%; }
 
 .th-palette {
   padding-top: 50px;
@@ -439,5 +442,15 @@ p {
   left: 200px;
   width: 280px;
   background-color: #000; }
+
+.th-border-note img {
+  width: 30%; }
+.th-border-note .border-left {
+  padding-right: 55px; }
+.th-border-note .border-right {
+  padding-left: 55px; }
+
+.th-border-chic img {
+  width: 40%; }
 
 /*# sourceMappingURL=style.css.map */

@@ -306,9 +306,8 @@ p {
     animation: progress-bar 1000ms; }
 
 .th-chic {
-  display: flex;
-  flex-direction: row;
-  width: 100%; }
+  width: 100%;
+  display: flex; }
 
 .th-palette {
   padding-top: 50px;
@@ -452,5 +451,9 @@ p {
 
 .th-border-chic img {
   width: 40%; }
+.th-border-chic .border-left {
+  margin-right: 100px; }
+.th-border-chic .border-right {
+  margin-left: 100px; }
 
 /*# sourceMappingURL=style.css.map */

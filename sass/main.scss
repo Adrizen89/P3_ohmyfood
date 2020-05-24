@@ -64,6 +64,9 @@ a{
     text-decoration: none;
     list-style: none;
 }
+li{
+    list-style: none;
+}
 
 header{
     @include bg-color();
@@ -349,25 +352,8 @@ footer{
     
     
 
-    .main-table{
+    
         
-        
-        padding: 30px;
-        font-size: 1.5em;
-        .table-txt-note{
-            padding-right: 100px;
-        }
-        .table-txt-chic{
-            padding-right: 100px;
-        }
-        .table-txt-palette{
-            padding-right: 100px;
-        }
-        .table-txt-delice{
-            padding-right: 30px;
-        }
-        
-    }
     .table-note{
         @include font-note();
         @include color-font-note();
@@ -431,12 +417,8 @@ footer{
     
 
     
-    .main-th{
-        font-size: 1em;
-    }
-    .main-tr{
-        font-size: 0.8em;
-    }
+    
+    
     .th-note{
         padding-bottom: 30px;
         padding-top: 40px;
@@ -460,7 +442,7 @@ footer{
         padding-bottom: 30px;
     }
     
-    .th-chic-entre{
+    .h4-chic-entre{
         color: #d08b3c;
     }
     .th-chic-plat{
@@ -510,11 +492,11 @@ footer{
         background-color: #000;
     }
 
-    .th-chic-entre {
+    .h4-chic-entre {
         position: relative;
     }
     
-    .th-chic-entre::before {
+    .h4-chic-entre::before {
         content: "";
         position: absolute;
         bottom: 30px;
@@ -525,7 +507,7 @@ footer{
         transition: 500ms ease-in-out;
     }
     
-    .th-chic-entre:hover::before {
+    .h4-chic-entre:hover::before {
         left: 150px;
         width: 450px;
         background-color: #d08b3c;
@@ -615,29 +597,20 @@ footer{
         background-color: #000;
     }
 
-    .th-border-note{
-        img{
-            width: 30%;
-            
-            
-        }
-        .border-left{
-                padding-right: 55px;
-            }
-        .border-right{
-            padding-left: 55px;
-        }
-    }
+ 
 
-    .th-border-chic{
-        
-        img{
-            width: 40%;
-        }
-        .border-left{
-           margin-right: 100px;
-        }
-        .border-right{
-           margin-left: 100px;
-        }
-    }
+.flex{
+    display: flex;
+    width: 100%;
+    margin-left: 50px;
+}
+
+.list-noms{
+    font-size: 1.3em;
+}
+.list-prix{
+    font-size: 1.3em;
+}
+.entre{
+    margin-right: 200px;
+}

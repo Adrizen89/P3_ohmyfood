@@ -448,11 +448,8 @@ footer{
         }
     }
     .th-chic{
-        
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        
+      width: 100%;
+      display: flex;
     }
     .th-palette{
         padding-top: 50px;
@@ -638,9 +635,9 @@ footer{
             width: 40%;
         }
         .border-left{
-           
+           margin-right: 100px;
         }
         .border-right{
-           
+           margin-left: 100px;
         }
     }

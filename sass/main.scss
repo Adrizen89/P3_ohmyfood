@@ -1,61 +1,16 @@
-$color-bg : #579c87;
-$color-bg-txt : #fdcb46;
-$color-note : #fcdfdb;
-$color-chic : #fff5fe;
-$color-delice : #f9f9f9;
-$color-palette : #fdfffd;
-$color_menu-note:#3c1218;
-$color_menu-chic:#c77412;
-$color_menu-delice:#0887fb;
-$color_menu-palette: #72bf56;
+@import "./utils/variables";
+@import "./utils/fonctions";
 
-$shake-intensity: 1%;
+@import "./pages/note";
+@import "./pages/chic";
+@import "./pages/delice";
 
-@mixin bg-color($color : $color-bg) {
-    background-color: $color;
-}
-@mixin bg-font {
-    font-family: 'Spartan', sans-serif;
-}
 
-@mixin font-note {
-    font-family: 'Zhi Mang Xing', cursive;
-}
-@mixin font-chic{
-    font-family: 'Croissant One', cursive;
-}
-@mixin font-papille{
-    font-family: 'Dancing Script', cursive;
-}
-@mixin font-palette{
-    font-family: 'Kaushan Script', cursive;
-}
-@mixin font-menu {
-    font-family: 'Kalam', cursive;
-}
 
-@mixin shadows-box {
-    box-shadow: 0 0 1em #e2e2e2;
-}
 
-@mixin color-font-note {
-    color: #3c1218;
-}
-@mixin color-font-chic {
-   background : -webkit-linear-gradient(10deg, #FF9100, #3D5AFE );
-  -webkit-background-clip : text;
-  -webkit-text-fill-color: transparent;
-}
-@mixin color-font-papille {
-    background: -webkit-linear-gradient(10deg, #0D47A1 , #29B6F6 );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-@mixin color-font-palette {
-    background: -webkit-linear-gradient(10deg, #43A047 , #C6FF00 );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
+
+
+
 
 *{
     margin: 0;
@@ -309,7 +264,6 @@ footer{
     }
     .article-note{
         @include bg-color($color-note);
-        height: 1400px;
     }
     .article-chic{
         @include bg-color($color-chic);
@@ -330,46 +284,28 @@ footer{
         width: 150px;
     }
 }
-    .title-menu{
-        font-size: 3.5em;
-    }
-    .title-chic{
-        font-size: 2em;
-        @include color-font-chic();
-        padding-top: 100px;
-    }
+    
+    
     .title-palette{
         @include color-font-palette();
         padding-top: 50px;
-    }
-    .title-delice{
-        @include color-font-papille();
-        padding-top: 50px;
-        font-size: 3.7em;
-    }
-    .title-note{
-        font-size: 2.7em;
+        font-size: 1em;
     }
     
     
-
+    
+    .title-menu{
+            font-size: 4em;
+            text-align: center;
+        }
+    .main-h4{
+            text-align: center;
+        }
     
         
-    .table-note{
-        @include font-note();
-        @include color-font-note();
-        margin: 0 50px 0 50px;
-        td{
-            padding-bottom: 20px;
-            font-size: 1em;
-            @include font-menu();
-        }
-        th{
-            font-size: 1.4em;
-            @include font-menu();
-            
-        }
-    }
+    
+        
+    
     .table-palette{
         @include font-palette();
         margin: auto;
@@ -381,29 +317,8 @@ footer{
             @include font-menu();
         }
     }
-    .table-chic{
-        @include font-chic();
-        
-        td{
-            padding-bottom: 20px;
-            padding-left: 50px;
-            padding-right: 50px;
-            
-        }
-    }
-    .table-delice{
-        @include font-papille();
-        margin: auto;
-        td{
-            font-size: 1.2em;
-            padding-bottom: 10px;
-            @include font-menu();
-        }
-        th{
-            font-size: 1.3em;
-            @include font-menu();
-        }
-    }
+    
+    
     .footer-note{
         @include font-note();
         @include color-font-note();
@@ -420,20 +335,8 @@ footer{
     
     
     
-    .th-note{
-        padding-bottom: 30px;
-        padding-top: 40px;
-        
-        
-
-        :hover{
-            animation: progress-bar 1000ms
-        }
-    }
-    .th-chic{
-      width: 100%;
-      display: flex;
-    }
+    
+    
     .th-palette{
         padding-top: 50px;
         padding-bottom: 30px;
@@ -443,25 +346,9 @@ footer{
         padding-bottom: 30px;
     }
     
-    .h4-chic-entre{
-        color: #d08b3c;
-    }
-    .th-chic-plat{
-        color: #a56799;
-    }
-    .th-chic-dessert{
-        color: #6e4ccc;
-    }
+    
 
-    .tr-chic-entre{
-        color: #d08b3c;
-    }
-    .tr-chic-plat{
-        color: #a56799;
-    }
-    .tr-chic-dessert{
-        color: #6e4ccc;
-    }
+    
 
     @keyframes progress-bar{
         0% {
@@ -472,111 +359,13 @@ footer{
         }
     }
 
-    .th-note {
-        position: relative;
-    }
     
-    .th-note::before {
-        content: "";
-        position: absolute;
-        bottom: 30px;
-        left: 290px;
-        width: 0;
-        height: 0.1em;
-        
-        transition: 500ms ease-in-out;
-    }
-    
-    .th-note:hover::before {
-        left: 290px;
-        width: 200px;
-        background-color: #000;
-    }
 
-    .h4-chic-entre {
-        position: relative;
-    }
     
-    .h4-chic-entre::before {
-        content: "";
-        position: absolute;
-        bottom: 30px;
-        left: 150px;
-        width: 0;
-        height: 0.1em;
-        
-        transition: 500ms ease-in-out;
-    }
-    
-    .h4-chic-entre:hover::before {
-        left: 150px;
-        width: 450px;
-        background-color: #d08b3c;
-    }
 
-    .th-chic-plat {
-        position: relative;
-    }
     
-    .th-chic-plat::before {
-        content: "";
-        position: absolute;
-        bottom: 30px;
-        left: 150px;
-        width: 0;
-        height: 0.1em;
-        
-        transition: 500ms ease-in-out;
-    }
-    
-    .th-chic-plat:hover::before {
-        left: 150px;
-        width: 450px;
-        background-color: #a56799;
-    }
 
-    .th-chic-dessert {
-        position: relative;
-    }
-    
-    .th-chic-dessert::before {
-        content: "";
-        position: absolute;
-        bottom: 30px;
-        left: 150px;
-        width: 0;
-        height: 0.1em;
-        
-        transition: 500ms ease-in-out;
-    }
-    
-    .th-chic-dessert:hover::before {
-        left: 150px;
-        width: 450px;
-        background-color: #6e4ccc;
-    }
-
-    .th-delice {
-        position: relative;
-    }
-    
-    .th-delice::before {
-        content: "";
-        position: absolute;
-        bottom: 30px;
-        left: 170px;
-        width: 0;
-        height: 0.1em;
-        
-        transition: 500ms ease-in-out;
-    }
-    
-    .th-delice:hover::before {
-        left: 170px;
-        width: 340px;
-        background-color: #000;
-    }
-
+    /* ANIMATIONS PALETTE */
     .th-palette {
         position: relative;
     }
@@ -600,18 +389,6 @@ footer{
 
  
 
-.flex{
-    display: flex;
-    width: 100%;
-    margin-left: 50px;
-}
+    
 
-.list-noms{
-    font-size: 1.3em;
-}
-.list-prix{
-    font-size: 1.3em;
-}
-.entre{
-    margin-right: 200px;
-}
+

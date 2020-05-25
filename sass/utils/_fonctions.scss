@@ -1,0 +1,45 @@
+@mixin bg-color($color : $color-bg) {
+    background-color: $color;
+}
+@mixin bg-font {
+    font-family: 'Spartan', sans-serif;
+}
+
+@mixin font-note {
+    font-family: 'Zhi Mang Xing', cursive;
+}
+@mixin font-chic{
+    font-family: 'Croissant One', cursive;
+}
+@mixin font-papille{
+    font-family: 'Dancing Script', cursive;
+}
+@mixin font-palette{
+    font-family: 'Kaushan Script', cursive;
+}
+@mixin font-menu {
+    font-family: 'Kalam', cursive;
+}
+
+@mixin shadows-box {
+    box-shadow: 0 0 1em #e2e2e2;
+}
+
+@mixin color-font-note {
+    color: #3c1218;
+}
+@mixin color-font-chic {
+   background : -webkit-linear-gradient(10deg, #FF9100, #3D5AFE );
+  -webkit-background-clip : text;
+  -webkit-text-fill-color: transparent;
+}
+@mixin color-font-papille {
+    background: -webkit-linear-gradient(10deg, #0D47A1 , #29B6F6 );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@mixin color-font-palette {
+    background: -webkit-linear-gradient(10deg, #43A047 , #C6FF00 );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

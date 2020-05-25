@@ -1,0 +1,80 @@
+.title-note{
+    font-size: 2.7em;
+    color: $color_menu-note;
+    @include font-note;
+}
+
+.main-note{
+    @include font-menu();
+    @include color-font-note();
+    margin: 0 50px 0 50px;
+    .h4-note{
+        font-size: 1.8em;
+    }
+    .flex{
+        display: flex;
+        width: 100%;
+        li{
+            margin-top: 10px;
+        }
+        
+    }
+    .main-border-note{
+        display: flex;
+        justify-content: center;
+        margin-top: 80px;
+        .border-note{
+            width: 250px;
+        }
+        .border-left-entre{
+            margin-right: 100px;
+        }
+        .border-right-entre{
+            margin-left: 100px;
+        }
+        .border-left-plat{
+            margin-right: 70px;
+        }
+        .border-right-plat{
+            margin-left: 70px;
+        }
+        .border-left-dessert{
+            margin-right: 90px;
+        }
+        .border-right-dessert{
+            margin-left: 90px;
+        }
+        
+    }
+    .entre{
+        margin-right: 260px;
+    }
+    .plat{
+        margin-right: 280px;
+    }
+    .list-noms, .list-prix{
+        font-size: 1.1em;
+    }
+}
+
+/* ANIMATIONS NOTE ENCHANTEE */
+.h4-note {
+    position: relative;
+}
+
+.h4-note::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 0.1em;
+    
+    transition: 500ms ease-in-out;
+}
+
+.h4-note:hover::before {
+    left: 0;
+    width: 100%;
+    background-color: #000;
+}

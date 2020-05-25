@@ -1,0 +1,140 @@
+/* MENU CHIC A LA FRANCAISE */
+.title-chic{
+    font-size: 3em;
+    @include color-font-chic();
+    padding-top: 100px;
+}
+.main-chic{
+    @include font-chic();
+    .h4-chic{
+        font-size: 1.3em;
+    }
+    .h4-chic-entre{
+        color: #d08b3c;
+    }
+    .h4-chic-plat{
+        color: #a56799;
+    }
+    .h4-chic-dessert{
+        color: #6e4ccc;
+    }
+    .border{
+        display: flex;
+        justify-content: center;
+        margin-top: 100px;
+        margin-bottom: 50px;
+        .border-chic{
+            width: 250px;
+        }
+        .border-right-entre{
+            margin-left: 50px;
+        }
+        .border-left-entre{
+            margin-right: 50px;
+        }
+        .border-right-plat{
+            margin-left: 90px;
+        }
+        .border-left-plat{
+            margin-right: 90px;
+        }
+        .border-left-dessert{
+            margin-right: 80px;
+        }
+        .border-right-dessert{
+            margin-left: 80px;
+        }
+    }
+    .list-noms, .list-prix{
+        font-size: 1.3em;
+    }
+    
+    .entre{
+        margin-right: 200px;
+        color: $color-chic-entre;
+    }
+    .plat{
+        color: $color-chic-plat;
+    }
+    .dessert{
+        color: $color-chic-dessert;
+    }
+    
+    .entre-prix{
+        color: $color-chic-entre;
+    }
+    .plat-prix{
+        color: $color-chic-plat;
+    }
+    .flex{
+        display: flex;
+        width: 100%;
+        margin-left: 50px;
+        li{
+            margin-top: 10px;
+        }
+    }
+}
+
+/* ANIMATIONS CHIC A LA FR */
+.h4-chic-entre {
+    position: relative;
+}
+
+.h4-chic-entre::before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 0;
+    height: 0.1em;
+    
+    transition: 500ms ease-in-out;
+}
+
+.h4-chic-entre:hover::before {
+    left: 0px;
+    width: 100%;
+    background-color: #d08b3c;
+}
+
+.h4-chic-plat {
+    position: relative;
+}
+
+.h4-chic-plat::before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 0;
+    height: 0.1em;
+    
+    transition: 500ms ease-in-out;
+}
+
+.h4-chic-plat:hover::before {
+    left: 0px;
+    width: 100%;
+    background-color: #a56799;
+}
+
+.h4-chic-dessert {
+    position: relative;
+}
+
+.h4-chic-dessert::before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 0;
+    height: 0.1em;
+    transition: 500ms ease-in-out;
+}
+
+.h4-chic-dessert:hover::before {
+    left: 0px;
+    width: 100%;
+    background-color: #6e4ccc;
+}

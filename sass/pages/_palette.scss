@@ -1,0 +1,61 @@
+.title-palette{
+    @include color-font-palette();
+    @include font-palette;
+    padding-top: 50px;
+    font-size: 5em;
+}
+
+.main-palette{
+    @include font-menu();
+    margin: auto;
+    .h4-palette{
+        font-size: 1.4em;
+    }
+    .main-border-palette{
+        display: flex;
+        justify-content: center;
+        margin-top: 80px;
+        .border-palette{
+            width: 300px;
+        }
+        .border-left-entre{
+            margin-right: 90px;
+        }
+        .border-right-entre{
+            margin-left: 90px;
+        }
+        .border-left-plat{
+            margin-right: 50px;
+        }
+        .border-right-plat{
+            margin-left: 50px;
+        }
+        .border-left-dessert{
+            margin-right: 40px;
+        }
+        .border-right-dessert{
+            margin-left: 40px;
+        }
+    }
+    .flex{
+        display: flex;
+        width: 100%;
+        margin-left: 100px;
+        margin-top: 50px;
+            li{
+            margin-top: 10px;
+            }
+    }
+    .entre{
+        margin-right: 180px;
+    }
+    .plat{
+        margin-right: 90px;
+    }
+    .dessert{
+        margin-right: 100px;
+    }
+    .list-noms, .list-prix{
+        font-size: 1.1em;
+    }
+}

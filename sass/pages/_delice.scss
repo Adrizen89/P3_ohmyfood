@@ -1,0 +1,85 @@
+.title-delice{
+    @include color-font-papille();
+    padding-top: 100px;
+    font-size: 2.7em;
+    @include font-papille;
+}
+
+.main-delice{
+    @include font-menu();
+    margin: auto;
+    .h4-delice{
+        font-size: 1.4em;
+    }
+    .main-border-delice{
+        display: flex;
+        justify-content: center;
+        margin-top: 80px;
+        .border-delice{
+            width: 270px;
+        }
+        .border-left-entre{
+            margin-right: 50px;
+        }
+        .border-right-entre{
+            margin-left: 50px;
+        }
+        .border-left-plat{
+            margin-right: 50px;
+        }
+        .border-right-plat{
+            margin-left: 50px;
+        }
+        .border-left-dessert{
+            margin-right: 50px;
+        }
+        .border-right-dessert{
+            margin-left: 50px;
+        }
+    }
+    .flex{
+        display: flex;
+        width: 100%;
+        margin-left: 100px;
+        margin-top: 50px;
+            li{
+            margin-top: 10px;
+            }
+    }
+    .entre{
+        margin-right: 130px;
+    }
+    .plat{
+        margin-right: 200px;
+    }
+    .dessert{
+        margin-right: 400px;
+    }
+    .list-noms, .list-prix{
+        font-size: 1.1em;
+    }
+    
+}
+
+
+/* ANIMATIONS DELICE */
+.h4-delice {
+    position: relative;
+}
+
+.h4-delice::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 0.1em;
+    
+    transition: 500ms ease-in-out;
+}
+
+.h4-delice:hover::before {
+    left: 0;
+    width: 100%;
+    background-color: #000;
+}

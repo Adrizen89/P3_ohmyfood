@@ -4,6 +4,7 @@
 @import "./pages/note";
 @import "./pages/chic";
 @import "./pages/delice";
+@import "./pages/palette";
 
 
 
@@ -286,16 +287,12 @@ footer{
 }
     
     
-    .title-palette{
-        @include color-font-palette();
-        padding-top: 50px;
-        font-size: 1em;
-    }
+    
     
     
     
     .title-menu{
-            font-size: 4em;
+            
             text-align: center;
         }
     .main-h4{
@@ -306,17 +303,8 @@ footer{
     
         
     
-    .table-palette{
-        @include font-palette();
-        margin: auto;
-        td{
-            padding-bottom: 20px;
-            @include font-menu();
-        }
-        th{
-            @include font-menu();
-        }
-    }
+    
+        
     
     
     .footer-note{
@@ -337,14 +325,7 @@ footer{
     
     
     
-    .th-palette{
-        padding-top: 50px;
-        padding-bottom: 30px;
-    }
-    .th-delice{
-        padding-top: 30px;
-        padding-bottom: 30px;
-    }
+    
     
     
 
@@ -366,24 +347,24 @@ footer{
     
 
     /* ANIMATIONS PALETTE */
-    .th-palette {
+    .h4-palette {
         position: relative;
     }
     
-    .th-palette::before {
+    .h4-palette::before {
         content: "";
         position: absolute;
-        bottom: 30px;
-        left: 200px;
+        bottom: 0;
+        left: 0;
         width: 0;
         height: 0.1em;
         
         transition: 500ms ease-in-out;
     }
     
-    .th-palette:hover::before {
-        left: 200px;
-        width: 280px;
+    .h4-palette:hover::before {
+        left: 0;
+        width: 100%;
         background-color: #000;
     }
 

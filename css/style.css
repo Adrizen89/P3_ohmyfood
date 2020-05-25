@@ -231,6 +231,53 @@
   width: 100%;
   background-color: #000; }
 
+.title-palette {
+  background: -webkit-linear-gradient(10deg, #43A047, #C6FF00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Kaushan Script', cursive;
+  padding-top: 50px;
+  font-size: 5em; }
+
+.main-palette {
+  font-family: 'Kalam', cursive;
+  margin: auto; }
+  .main-palette .h4-palette {
+    font-size: 1.4em; }
+  .main-palette .main-border-palette {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px; }
+    .main-palette .main-border-palette .border-palette {
+      width: 300px; }
+    .main-palette .main-border-palette .border-left-entre {
+      margin-right: 90px; }
+    .main-palette .main-border-palette .border-right-entre {
+      margin-left: 90px; }
+    .main-palette .main-border-palette .border-left-plat {
+      margin-right: 50px; }
+    .main-palette .main-border-palette .border-right-plat {
+      margin-left: 50px; }
+    .main-palette .main-border-palette .border-left-dessert {
+      margin-right: 40px; }
+    .main-palette .main-border-palette .border-right-dessert {
+      margin-left: 40px; }
+  .main-palette .flex {
+    display: flex;
+    width: 100%;
+    margin-left: 100px;
+    margin-top: 50px; }
+    .main-palette .flex li {
+      margin-top: 10px; }
+  .main-palette .entre {
+    margin-right: 180px; }
+  .main-palette .plat {
+    margin-right: 90px; }
+  .main-palette .dessert {
+    margin-right: 100px; }
+  .main-palette .list-noms, .main-palette .list-prix {
+    font-size: 1.1em; }
+
 * {
   margin: 0; }
 
@@ -443,28 +490,11 @@ p {
   p .noteimg {
     width: 150px; }
 
-.title-palette {
-  background: -webkit-linear-gradient(10deg, #43A047, #C6FF00);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  padding-top: 50px;
-  font-size: 1em; }
-
 .title-menu {
-  font-size: 4em;
   text-align: center; }
 
 .main-h4 {
   text-align: center; }
-
-.table-palette {
-  font-family: 'Kaushan Script', cursive;
-  margin: auto; }
-  .table-palette td {
-    padding-bottom: 20px;
-    font-family: 'Kalam', cursive; }
-  .table-palette th {
-    font-family: 'Kalam', cursive; }
 
 .footer-note {
   font-family: 'Zhi Mang Xing', cursive;
@@ -475,35 +505,27 @@ p {
   .footer-note img {
     width: 80px; }
 
-.th-palette {
-  padding-top: 50px;
-  padding-bottom: 30px; }
-
-.th-delice {
-  padding-top: 30px;
-  padding-bottom: 30px; }
-
 @keyframes progress-bar {
   0% {
     transform: scaleX(0); }
   100% {
     transform: scaleX(1); } }
 /* ANIMATIONS PALETTE */
-.th-palette {
+.h4-palette {
   position: relative; }
 
-.th-palette::before {
+.h4-palette::before {
   content: "";
   position: absolute;
-  bottom: 30px;
-  left: 200px;
+  bottom: 0;
+  left: 0;
   width: 0;
   height: 0.1em;
   transition: 500ms ease-in-out; }
 
-.th-palette:hover::before {
-  left: 200px;
-  width: 280px;
+.h4-palette:hover::before {
+  left: 0;
+  width: 100%;
   background-color: #000; }
 
 /*# sourceMappingURL=style.css.map */

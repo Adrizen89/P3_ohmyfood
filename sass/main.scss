@@ -83,6 +83,7 @@ header{
 .section-up, .section-down{
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     margin: 50px 30px 30px 30px;
     .main-article{
         text-align: center;

@@ -1,3 +1,236 @@
+.title-note {
+  font-size: 2.7em;
+  color: #3c1218;
+  font-family: 'Zhi Mang Xing', cursive; }
+
+.main-note {
+  font-family: 'Kalam', cursive;
+  color: #3c1218;
+  margin: 0 50px 0 50px; }
+  .main-note .h4-note {
+    font-size: 1.8em; }
+  .main-note .flex {
+    display: flex;
+    width: 100%; }
+    .main-note .flex li {
+      margin-top: 10px; }
+  .main-note .main-border-note {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px; }
+    .main-note .main-border-note .border-note {
+      width: 250px; }
+    .main-note .main-border-note .border-left-entre {
+      margin-right: 100px; }
+    .main-note .main-border-note .border-right-entre {
+      margin-left: 100px; }
+    .main-note .main-border-note .border-left-plat {
+      margin-right: 70px; }
+    .main-note .main-border-note .border-right-plat {
+      margin-left: 70px; }
+    .main-note .main-border-note .border-left-dessert {
+      margin-right: 90px; }
+    .main-note .main-border-note .border-right-dessert {
+      margin-left: 90px; }
+  .main-note .entre {
+    margin-right: 260px; }
+  .main-note .plat {
+    margin-right: 280px; }
+  .main-note .list-noms, .main-note .list-prix {
+    font-size: 1.1em; }
+
+/* ANIMATIONS NOTE ENCHANTEE */
+.h4-note {
+  position: relative; }
+
+.h4-note::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 0.1em;
+  transition: 500ms ease-in-out; }
+
+.h4-note:hover::before {
+  left: 0;
+  width: 100%;
+  background-color: #000; }
+
+/* MENU CHIC A LA FRANCAISE */
+.title-chic {
+  font-size: 3em;
+  background: -webkit-linear-gradient(10deg, #FF9100, #3D5AFE);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-top: 100px; }
+
+.main-chic {
+  font-family: 'Croissant One', cursive; }
+  .main-chic .h4-chic {
+    font-size: 1.3em; }
+  .main-chic .h4-chic-entre {
+    color: #d08b3c; }
+  .main-chic .h4-chic-plat {
+    color: #a56799; }
+  .main-chic .h4-chic-dessert {
+    color: #6e4ccc; }
+  .main-chic .border {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 50px; }
+    .main-chic .border .border-chic {
+      width: 250px; }
+    .main-chic .border .border-right-entre {
+      margin-left: 50px; }
+    .main-chic .border .border-left-entre {
+      margin-right: 50px; }
+    .main-chic .border .border-right-plat {
+      margin-left: 90px; }
+    .main-chic .border .border-left-plat {
+      margin-right: 90px; }
+    .main-chic .border .border-left-dessert {
+      margin-right: 80px; }
+    .main-chic .border .border-right-dessert {
+      margin-left: 80px; }
+  .main-chic .list-noms, .main-chic .list-prix {
+    font-size: 1.3em; }
+  .main-chic .entre {
+    margin-right: 200px;
+    color: #d08b3c; }
+  .main-chic .plat {
+    color: #a56799; }
+  .main-chic .dessert {
+    color: #6e4ccc; }
+  .main-chic .entre-prix {
+    color: #d08b3c; }
+  .main-chic .plat-prix {
+    color: #a56799; }
+  .main-chic .flex {
+    display: flex;
+    width: 100%;
+    margin-left: 50px; }
+    .main-chic .flex li {
+      margin-top: 10px; }
+
+/* ANIMATIONS CHIC A LA FR */
+.h4-chic-entre {
+  position: relative; }
+
+.h4-chic-entre::before {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 0;
+  height: 0.1em;
+  transition: 500ms ease-in-out; }
+
+.h4-chic-entre:hover::before {
+  left: 0px;
+  width: 100%;
+  background-color: #d08b3c; }
+
+.h4-chic-plat {
+  position: relative; }
+
+.h4-chic-plat::before {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 0;
+  height: 0.1em;
+  transition: 500ms ease-in-out; }
+
+.h4-chic-plat:hover::before {
+  left: 0px;
+  width: 100%;
+  background-color: #a56799; }
+
+.h4-chic-dessert {
+  position: relative; }
+
+.h4-chic-dessert::before {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 0;
+  height: 0.1em;
+  transition: 500ms ease-in-out; }
+
+.h4-chic-dessert:hover::before {
+  left: 0px;
+  width: 100%;
+  background-color: #6e4ccc; }
+
+.title-delice {
+  background: -webkit-linear-gradient(10deg, #0D47A1, #29B6F6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-top: 100px;
+  font-size: 2.7em;
+  font-family: 'Dancing Script', cursive; }
+
+.main-delice {
+  font-family: 'Kalam', cursive;
+  margin: auto; }
+  .main-delice .h4-delice {
+    font-size: 1.4em; }
+  .main-delice .main-border-delice {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px; }
+    .main-delice .main-border-delice .border-delice {
+      width: 270px; }
+    .main-delice .main-border-delice .border-left-entre {
+      margin-right: 50px; }
+    .main-delice .main-border-delice .border-right-entre {
+      margin-left: 50px; }
+    .main-delice .main-border-delice .border-left-plat {
+      margin-right: 50px; }
+    .main-delice .main-border-delice .border-right-plat {
+      margin-left: 50px; }
+    .main-delice .main-border-delice .border-left-dessert {
+      margin-right: 50px; }
+    .main-delice .main-border-delice .border-right-dessert {
+      margin-left: 50px; }
+  .main-delice .flex {
+    display: flex;
+    width: 100%;
+    margin-left: 100px;
+    margin-top: 50px; }
+    .main-delice .flex li {
+      margin-top: 10px; }
+  .main-delice .entre {
+    margin-right: 130px; }
+  .main-delice .plat {
+    margin-right: 200px; }
+  .main-delice .dessert {
+    margin-right: 400px; }
+  .main-delice .list-noms, .main-delice .list-prix {
+    font-size: 1.1em; }
+
+/* ANIMATIONS DELICE */
+.h4-delice {
+  position: relative; }
+
+.h4-delice::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 0.1em;
+  transition: 500ms ease-in-out; }
+
+.h4-delice:hover::before {
+  left: 0;
+  width: 100%;
+  background-color: #000; }
+
 * {
   margin: 0; }
 
@@ -21,6 +254,7 @@ header {
 .section-up, .section-down {
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
   margin: 50px 30px 30px 30px; }
   .section-up .main-article, .section-down .main-article {
     text-align: center;
@@ -189,8 +423,7 @@ footer {
   margin-bottom: 80px; }
 
 .article-note {
-  background-color: #fcdfdb;
-  height: 1400px; }
+  background-color: #fcdfdb; }
 
 .article-chic {
   background-color: #fff5fe; }
@@ -210,43 +443,19 @@ p {
   p .noteimg {
     width: 150px; }
 
-.title-menu {
-  font-size: 3.5em; }
-
-.title-chic {
-  font-size: 2em;
-  background: -webkit-linear-gradient(10deg, #FF9100, #3D5AFE);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  padding-top: 100px; }
-
 .title-palette {
   background: -webkit-linear-gradient(10deg, #43A047, #C6FF00);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  padding-top: 50px; }
-
-.title-delice {
-  background: -webkit-linear-gradient(10deg, #0D47A1, #29B6F6);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   padding-top: 50px;
-  font-size: 3.7em; }
+  font-size: 1em; }
 
-.title-note {
-  font-size: 2.7em; }
+.title-menu {
+  font-size: 4em;
+  text-align: center; }
 
-.table-note {
-  font-family: 'Zhi Mang Xing', cursive;
-  color: #3c1218;
-  margin: 0 50px 0 50px; }
-  .table-note td {
-    padding-bottom: 20px;
-    font-size: 1em;
-    font-family: 'Kalam', cursive; }
-  .table-note th {
-    font-size: 1.4em;
-    font-family: 'Kalam', cursive; }
+.main-h4 {
+  text-align: center; }
 
 .table-palette {
   font-family: 'Kaushan Script', cursive;
@@ -255,24 +464,6 @@ p {
     padding-bottom: 20px;
     font-family: 'Kalam', cursive; }
   .table-palette th {
-    font-family: 'Kalam', cursive; }
-
-.table-chic {
-  font-family: 'Croissant One', cursive; }
-  .table-chic td {
-    padding-bottom: 20px;
-    padding-left: 50px;
-    padding-right: 50px; }
-
-.table-delice {
-  font-family: 'Dancing Script', cursive;
-  margin: auto; }
-  .table-delice td {
-    font-size: 1.2em;
-    padding-bottom: 10px;
-    font-family: 'Kalam', cursive; }
-  .table-delice th {
-    font-size: 1.3em;
     font-family: 'Kalam', cursive; }
 
 .footer-note {
@@ -284,16 +475,6 @@ p {
   .footer-note img {
     width: 80px; }
 
-.th-note {
-  padding-bottom: 30px;
-  padding-top: 40px; }
-  .th-note :hover {
-    animation: progress-bar 1000ms; }
-
-.th-chic {
-  width: 100%;
-  display: flex; }
-
 .th-palette {
   padding-top: 50px;
   padding-bottom: 30px; }
@@ -302,114 +483,12 @@ p {
   padding-top: 30px;
   padding-bottom: 30px; }
 
-.h4-chic-entre {
-  color: #d08b3c; }
-
-.th-chic-plat {
-  color: #a56799; }
-
-.th-chic-dessert {
-  color: #6e4ccc; }
-
-.tr-chic-entre {
-  color: #d08b3c; }
-
-.tr-chic-plat {
-  color: #a56799; }
-
-.tr-chic-dessert {
-  color: #6e4ccc; }
-
 @keyframes progress-bar {
   0% {
     transform: scaleX(0); }
   100% {
     transform: scaleX(1); } }
-.th-note {
-  position: relative; }
-
-.th-note::before {
-  content: "";
-  position: absolute;
-  bottom: 30px;
-  left: 290px;
-  width: 0;
-  height: 0.1em;
-  transition: 500ms ease-in-out; }
-
-.th-note:hover::before {
-  left: 290px;
-  width: 200px;
-  background-color: #000; }
-
-.h4-chic-entre {
-  position: relative; }
-
-.h4-chic-entre::before {
-  content: "";
-  position: absolute;
-  bottom: 30px;
-  left: 150px;
-  width: 0;
-  height: 0.1em;
-  transition: 500ms ease-in-out; }
-
-.h4-chic-entre:hover::before {
-  left: 150px;
-  width: 450px;
-  background-color: #d08b3c; }
-
-.th-chic-plat {
-  position: relative; }
-
-.th-chic-plat::before {
-  content: "";
-  position: absolute;
-  bottom: 30px;
-  left: 150px;
-  width: 0;
-  height: 0.1em;
-  transition: 500ms ease-in-out; }
-
-.th-chic-plat:hover::before {
-  left: 150px;
-  width: 450px;
-  background-color: #a56799; }
-
-.th-chic-dessert {
-  position: relative; }
-
-.th-chic-dessert::before {
-  content: "";
-  position: absolute;
-  bottom: 30px;
-  left: 150px;
-  width: 0;
-  height: 0.1em;
-  transition: 500ms ease-in-out; }
-
-.th-chic-dessert:hover::before {
-  left: 150px;
-  width: 450px;
-  background-color: #6e4ccc; }
-
-.th-delice {
-  position: relative; }
-
-.th-delice::before {
-  content: "";
-  position: absolute;
-  bottom: 30px;
-  left: 170px;
-  width: 0;
-  height: 0.1em;
-  transition: 500ms ease-in-out; }
-
-.th-delice:hover::before {
-  left: 170px;
-  width: 340px;
-  background-color: #000; }
-
+/* ANIMATIONS PALETTE */
 .th-palette {
   position: relative; }
 
@@ -426,19 +505,5 @@ p {
   left: 200px;
   width: 280px;
   background-color: #000; }
-
-.flex {
-  display: flex;
-  width: 100%;
-  margin-left: 50px; }
-
-.list-noms {
-  font-size: 1.3em; }
-
-.list-prix {
-  font-size: 1.3em; }
-
-.entre {
-  margin-right: 200px; }
 
 /*# sourceMappingURL=style.css.map */

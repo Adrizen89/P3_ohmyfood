@@ -1,6 +1,12 @@
-@import "./utils/variables";
+@mixin mobile-only {
+    @media screen and (max-width: 425px){
+        @content;
+    }
+  }
+  @import "./utils/variables";
 @import "./utils/fonctions";
 
+@import "./pages/layout";
 @import "./pages/note";
 @import "./pages/chic";
 @import "./pages/delice";
@@ -41,10 +47,19 @@ header{
     justify-content: space-evenly;
     flex-wrap: wrap;
     margin: 50px 30px 30px 30px;
+    @include mobile-only{
+        flex-direction: column;
+        align-items: center;
+        
+    }
     .main-article{
         text-align: center;
         width: 40%;
         height: 500px;
+        @include mobile-only{
+            width: 80%;
+            
+        }
     }
     .article1{
         @include bg-color($color-note);
@@ -58,12 +73,18 @@ header{
     }
     .article2{
         @include bg-color($color-chic);
+        @include mobile-only{
+            margin-top: 50px;
+        }
     }
     .article3{
         @include bg-color($color-delice);
     }
     .article4{
         @include bg-color($color-palette);
+        @include mobile-only{
+            margin-top: 50px;
+        }
     }
     .shadow{
         @include shadows-box();
@@ -164,6 +185,9 @@ footer{
      @include bg-color();
      display: flex;
      justify-content: center;
+     @include mobile-only{
+         width: 60%;
+     }
      
      .txt-prochainement{
          padding-top: 25px;
@@ -188,6 +212,11 @@ footer{
     animation: ellipsis steps(4,end) 2s infinite;
     content: "\2026";
     width: 0px;
+    @include mobile-only{
+        left: 190px;
+        top: 2355px;
+
+    }
   }
   
   @keyframes ellipsis {
@@ -251,53 +280,16 @@ footer{
 
 
 
-    .main-title{
-        text-align: center;
-        padding-top: 40px;
-        padding-bottom: 20px;
-        @include bg-font();
-    }
-    .main-big-article{
-        width: 80%;
-        height: 1100px;
-        margin: auto;
-        margin-bottom: 80px;
-    }
-    .article-note{
-        @include bg-color($color-note);
-    }
-    .article-chic{
-        @include bg-color($color-chic);
-    }
-    .article-palette{
-        @include bg-color($color-palette);
-    }
-    .article-delice{
-        @include bg-color($color-delice);
-    }
-    .shadow{
-        @include shadows-box();
-    }
-    p{
-        text-align: center;
-        padding-top: 50px;
-        .noteimg{
-        width: 150px;
-    }
-}
     
     
     
     
     
     
-    .title-menu{
-            
-            text-align: center;
-        }
-    .main-h4{
-            text-align: center;
-        }
+    
+    
+    
+   
     
         
     
@@ -346,27 +338,7 @@ footer{
 
     
 
-    /* ANIMATIONS PALETTE */
-    .h4-palette {
-        position: relative;
-    }
     
-    .h4-palette::before {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 0;
-        height: 0.1em;
-        
-        transition: 500ms ease-in-out;
-    }
-    
-    .h4-palette:hover::before {
-        left: 0;
-        width: 100%;
-        background-color: #000;
-    }
 
  
 

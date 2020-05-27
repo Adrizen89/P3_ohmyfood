@@ -18,23 +18,43 @@
             text-align: center;
         }
     }
-    .flex{
-        display: flex;
-        width: 100%;
+    table{
         @include mobile-only{
-            flex-direction: column;
-            width: 90%;
-            justify-content: space-around;
-            
+        font-size: 1em;
         }
-        li{
-            margin-top: 10px;
-            @include mobile-only{
-                justify-content: space-around;
-                text-align: center;
-            }
+    }
+    tr{
+        @include mobile-only{
+            display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
         }
-        
+    }
+    .noms{
+        padding-left: 50px;
+        padding-top: 10px;
+        @include mobile-only{
+            padding-left: 20px;
+            margin-right: 20px;
+        }
+
+    }
+    .entre{
+        .noms{
+        padding-right: 300px;
+        @include mobile-only{
+            padding-right: 0;
+        }
+        }
+    }
+    .plats{
+        .noms{
+        padding-right: 320px;
+        @include mobile-only{
+            padding-right: 0;
+        }
+        }
     }
     .main-border-note{
         display: flex;
@@ -53,7 +73,7 @@
             }
         }
         .border-right-entre{
-            margin-left: 100px;
+            margin-left: 10px;
         }
         .border-left-plat{
             margin-right: 70px;
@@ -81,23 +101,7 @@
         }
         
     }
-    .entre{
-        margin-right: 260px;
-    }
-    .plat{
-        margin-right: 280px;
-    }
-    .list-noms, .list-prix{
-        font-size: 1.1em;
-        @include mobile-only{
-            font-size: 0.8em;
-            display: flex;
-        }
-    }
-    .list-noms-entre{
-        display: flex;
-        flex-direction: column;
-    }
+    
 }
 
 /* ANIMATIONS NOTE ENCHANTEE */

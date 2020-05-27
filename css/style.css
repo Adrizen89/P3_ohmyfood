@@ -119,6 +119,9 @@ p {
       .main-note .list-noms, .main-note .list-prix {
         font-size: 0.8em;
         display: flex; } }
+  .main-note .list-noms-entre {
+    display: flex;
+    flex-direction: column; }
 
 /* ANIMATIONS NOTE ENCHANTEE */
 .h4-note {

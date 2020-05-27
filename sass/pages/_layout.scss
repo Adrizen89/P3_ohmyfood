@@ -8,6 +8,10 @@
 
 .article-note{
     @include bg-color($color-note);
+    @include mobile-only{
+        height: auto;
+       
+    }
 }
 .article-chic{
     @include bg-color($color-chic);
@@ -41,11 +45,12 @@ p{
 }
 .main-big-article{
     width: 80%;
-    height: 1100px;
+    
     margin: auto;
     margin-bottom: 80px;
     @include mobile-only{
         width: 90%;
         margin: auto;
+        margin-bottom: 50px;
     }
 }

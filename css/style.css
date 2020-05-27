@@ -168,20 +168,39 @@ p {
     margin-bottom: 50px; }
     .main-chic .border .border-chic {
       width: 250px; }
+      @media screen and (max-width: 425px) {
+        .main-chic .border .border-chic {
+          width: 30%; } }
     .main-chic .border .border-right-entre {
       margin-left: 50px; }
+      @media screen and (max-width: 425px) {
+        .main-chic .border .border-right-entre {
+          margin-left: 10px; } }
     .main-chic .border .border-left-entre {
       margin-right: 50px; }
+      @media screen and (max-width: 425px) {
+        .main-chic .border .border-left-entre {
+          margin-right: 10px; } }
     .main-chic .border .border-right-plat {
       margin-left: 90px; }
+      @media screen and (max-width: 425px) {
+        .main-chic .border .border-right-plat {
+          margin-left: 10px; } }
     .main-chic .border .border-left-plat {
       margin-right: 90px; }
+      @media screen and (max-width: 425px) {
+        .main-chic .border .border-left-plat {
+          margin-right: 10px; } }
     .main-chic .border .border-left-dessert {
       margin-right: 80px; }
+      @media screen and (max-width: 425px) {
+        .main-chic .border .border-left-dessert {
+          margin-right: 10px; } }
     .main-chic .border .border-right-dessert {
       margin-left: 80px; }
-  .main-chic .list-noms, .main-chic .list-prix {
-    font-size: 1.3em; }
+      @media screen and (max-width: 425px) {
+        .main-chic .border .border-right-dessert {
+          margin-left: 10px; } }
   .main-chic .entre {
     margin-right: 200px;
     color: #d08b3c; }
@@ -189,16 +208,34 @@ p {
     color: #a56799; }
   .main-chic .dessert {
     color: #6e4ccc; }
-  .main-chic .entre-prix {
-    color: #d08b3c; }
-  .main-chic .plat-prix {
-    color: #a56799; }
-  .main-chic .flex {
-    display: flex;
-    width: 100%;
-    margin-left: 50px; }
-    .main-chic .flex li {
-      margin-top: 10px; }
+  @media screen and (max-width: 425px) {
+    .main-chic table {
+      font-size: 0.8em; } }
+  @media screen and (max-width: 425px) {
+    .main-chic tr {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center; } }
+  .main-chic .noms {
+    padding-left: 150px;
+    padding-top: 10px; }
+    @media screen and (max-width: 425px) {
+      .main-chic .noms {
+        padding-left: 0px;
+        margin-right: 0px; } }
+
+.entre .noms {
+  padding-right: 200px; }
+  @media screen and (max-width: 425px) {
+    .entre .noms {
+      padding-right: 0px; } }
+
+.plat .noms {
+  padding-right: 50px; }
+  @media screen and (max-width: 425px) {
+    .plat .noms {
+      padding-right: 0; } }
 
 /* ANIMATIONS CHIC A LA FR */
 .h4-chic-entre {

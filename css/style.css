@@ -51,17 +51,20 @@ p {
 
 .main-note {
   font-family: 'Kalam', cursive;
-  color: #3c1218;
-  margin: 0 50px 0 50px; }
-  @media screen and (max-width: 425px) {
-    .main-note {
-      margin: 0; } }
+  color: #3c1218; }
   .main-note .h4-note {
     font-size: 1.8em; }
+    @media screen and (max-width: 768px) {
+      .main-note .h4-note {
+        font-size: 1.3em;
+        text-align: center; } }
     @media screen and (max-width: 425px) {
       .main-note .h4-note {
         font-size: 1.2em;
         text-align: center; } }
+  @media screen and (max-width: 768px) {
+    .main-note table {
+      font-size: 1.1em; } }
   @media screen and (max-width: 425px) {
     .main-note table {
       font-size: 1em; } }
@@ -72,19 +75,28 @@ p {
       align-items: center;
       text-align: center; } }
   .main-note .noms {
-    padding-left: 50px;
+    padding-left: 100px;
     padding-top: 10px; }
+    @media screen and (max-width: 768px) {
+      .main-note .noms {
+        padding-left: 30px; } }
     @media screen and (max-width: 425px) {
       .main-note .noms {
         padding-left: 20px;
         margin-right: 20px; } }
   .main-note .entre .noms {
     padding-right: 300px; }
+    @media screen and (max-width: 768px) {
+      .main-note .entre .noms {
+        padding-right: 50px; } }
     @media screen and (max-width: 425px) {
       .main-note .entre .noms {
         padding-right: 0; } }
   .main-note .plats .noms {
     padding-right: 320px; }
+    @media screen and (max-width: 768px) {
+      .main-note .plats .noms {
+        padding-right: 70px; } }
     @media screen and (max-width: 425px) {
       .main-note .plats .noms {
         padding-right: 0; } }
@@ -94,33 +106,57 @@ p {
     margin-top: 80px; }
     .main-note .main-border-note .border-note {
       width: 250px; }
+      @media screen and (max-width: 768px) {
+        .main-note .main-border-note .border-note {
+          width: 30%; } }
       @media screen and (max-width: 425px) {
         .main-note .main-border-note .border-note {
           width: 30%; } }
     .main-note .main-border-note .border-left-entre {
       margin-right: 100px; }
+      @media screen and (max-width: 768px) {
+        .main-note .main-border-note .border-left-entre {
+          margin-right: 60px; } }
       @media screen and (max-width: 425px) {
         .main-note .main-border-note .border-left-entre {
           margin-right: 10px; } }
     .main-note .main-border-note .border-right-entre {
-      margin-left: 10px; }
+      margin-left: 100px; }
+      @media screen and (max-width: 768px) {
+        .main-note .main-border-note .border-right-entre {
+          margin-left: 60px; } }
+      @media screen and (max-width: 425px) {
+        .main-note .main-border-note .border-right-entre {
+          margin-left: 10px; } }
     .main-note .main-border-note .border-left-plat {
       margin-right: 70px; }
+      @media screen and (max-width: 768px) {
+        .main-note .main-border-note .border-left-plat {
+          margin-right: 40px; } }
       @media screen and (max-width: 425px) {
         .main-note .main-border-note .border-left-plat {
           margin-right: 10px; } }
     .main-note .main-border-note .border-right-plat {
       margin-left: 70px; }
+      @media screen and (max-width: 768px) {
+        .main-note .main-border-note .border-right-plat {
+          margin-left: 40px; } }
       @media screen and (max-width: 425px) {
         .main-note .main-border-note .border-right-plat {
           margin-left: 10px; } }
     .main-note .main-border-note .border-left-dessert {
       margin-right: 90px; }
+      @media screen and (max-width: 768px) {
+        .main-note .main-border-note .border-left-dessert {
+          margin-right: 50px; } }
       @media screen and (max-width: 425px) {
         .main-note .main-border-note .border-left-dessert {
           margin-right: 10px; } }
     .main-note .main-border-note .border-right-dessert {
       margin-left: 90px; }
+      @media screen and (max-width: 768px) {
+        .main-note .main-border-note .border-right-dessert {
+          margin-left: 50px; } }
       @media screen and (max-width: 425px) {
         .main-note .main-border-note .border-right-dessert {
           margin-left: 10px; } }
@@ -150,11 +186,23 @@ p {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   padding-top: 100px; }
+  @media screen and (max-width: 768px) {
+    .title-chic {
+      font-size: 2.5em; } }
+  @media screen and (max-width: 425px) {
+    .title-chic {
+      font-size: 2em; } }
 
 .main-chic {
   font-family: 'Croissant One', cursive; }
   .main-chic .h4-chic {
     font-size: 1.3em; }
+    @media screen and (max-width: 768px) {
+      .main-chic .h4-chic {
+        font-size: 1em; } }
+    @media screen and (max-width: 425px) {
+      .main-chic .h4-chic {
+        font-size: 0.8em; } }
   .main-chic .h4-chic-entre {
     color: #d08b3c; }
   .main-chic .h4-chic-plat {
@@ -168,46 +216,63 @@ p {
     margin-bottom: 50px; }
     .main-chic .border .border-chic {
       width: 250px; }
+      @media screen and (max-width: 768px) {
+        .main-chic .border .border-chic {
+          width: 30%; } }
       @media screen and (max-width: 425px) {
         .main-chic .border .border-chic {
           width: 30%; } }
     .main-chic .border .border-right-entre {
       margin-left: 50px; }
+      @media screen and (max-width: 768px) {
+        .main-chic .border .border-right-entre {
+          margin-left: 10px; } }
       @media screen and (max-width: 425px) {
         .main-chic .border .border-right-entre {
           margin-left: 10px; } }
     .main-chic .border .border-left-entre {
       margin-right: 50px; }
+      @media screen and (max-width: 768px) {
+        .main-chic .border .border-left-entre {
+          margin-right: 10px; } }
       @media screen and (max-width: 425px) {
         .main-chic .border .border-left-entre {
           margin-right: 10px; } }
     .main-chic .border .border-right-plat {
       margin-left: 90px; }
+      @media screen and (max-width: 768px) {
+        .main-chic .border .border-right-plat {
+          margin-left: 40px; } }
       @media screen and (max-width: 425px) {
         .main-chic .border .border-right-plat {
           margin-left: 10px; } }
     .main-chic .border .border-left-plat {
       margin-right: 90px; }
+      @media screen and (max-width: 768px) {
+        .main-chic .border .border-left-plat {
+          margin-right: 40px; } }
       @media screen and (max-width: 425px) {
         .main-chic .border .border-left-plat {
           margin-right: 10px; } }
     .main-chic .border .border-left-dessert {
       margin-right: 80px; }
+      @media screen and (max-width: 768px) {
+        .main-chic .border .border-left-dessert {
+          margin-right: 50px; } }
       @media screen and (max-width: 425px) {
         .main-chic .border .border-left-dessert {
           margin-right: 10px; } }
     .main-chic .border .border-right-dessert {
       margin-left: 80px; }
+      @media screen and (max-width: 768px) {
+        .main-chic .border .border-right-dessert {
+          margin-left: 50px; } }
       @media screen and (max-width: 425px) {
         .main-chic .border .border-right-dessert {
           margin-left: 10px; } }
-  .main-chic .entre {
-    margin-right: 200px;
-    color: #d08b3c; }
-  .main-chic .plat {
-    color: #a56799; }
-  .main-chic .dessert {
-    color: #6e4ccc; }
+  @media screen and (max-width: 768px) {
+    .main-chic table {
+      font-size: 0.9em; } }
   @media screen and (max-width: 425px) {
     .main-chic table {
       font-size: 0.8em; } }
@@ -218,24 +283,37 @@ p {
       align-items: center;
       text-align: center; } }
   .main-chic .noms {
-    padding-left: 150px;
-    padding-top: 10px; }
+    padding-left: 150px; }
+    @media screen and (max-width: 768px) {
+      .main-chic .noms {
+        padding-left: 50px; } }
     @media screen and (max-width: 425px) {
       .main-chic .noms {
-        padding-left: 0px;
-        margin-right: 0px; } }
-
-.entre .noms {
-  padding-right: 200px; }
-  @media screen and (max-width: 425px) {
-    .entre .noms {
-      padding-right: 0px; } }
-
-.plat .noms {
-  padding-right: 50px; }
-  @media screen and (max-width: 425px) {
-    .plat .noms {
-      padding-right: 0; } }
+        padding-left: 20px;
+        margin-right: 20px; } }
+  .main-chic .entre {
+    color: #d08b3c; }
+    .main-chic .entre .noms {
+      padding-right: 200px; }
+      @media screen and (max-width: 768px) {
+        .main-chic .entre .noms {
+          padding-right: 160px; } }
+      @media screen and (max-width: 425px) {
+        .main-chic .entre .noms {
+          padding-right: 0px; } }
+  .main-chic .plat {
+    color: #a56799; }
+    .main-chic .plat .noms {
+      padding-right: 50px; }
+      @media screen and (max-width: 768px) {
+        .main-chic .plat .noms {
+          padding-right: 15px; } }
+      @media screen and (max-width: 425px) {
+        .main-chic .plat .noms {
+          padding-right: 0; } }
+  .main-chic .dessert {
+    color: #6e4ccc;
+    padding-bottom: 50px; }
 
 /* ANIMATIONS CHIC A LA FR */
 .h4-chic-entre {
@@ -294,104 +372,126 @@ p {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   padding-top: 100px;
-  font-size: 2.7em;
+  font-size: 6em;
   font-family: 'Dancing Script', cursive; }
+  @media screen and (max-width: 768px) {
+    .title-delice {
+      font-size: 4em; } }
+  @media screen and (max-width: 425px) {
+    .title-delice {
+      font-size: 3em; } }
 
 .main-delice {
   font-family: 'Kalam', cursive;
   margin: auto; }
   .main-delice .h4-delice {
     font-size: 1.4em; }
+    @media screen and (max-width: 768px) {
+      .main-delice .h4-delice {
+        font-size: 1.2em;
+        text-align: center; } }
     @media screen and (max-width: 425px) {
       .main-delice .h4-delice {
         font-size: 1em;
-        text-align: center; } }
+        text-align: center;
+        margin-bottom: 0; } }
   .main-delice .main-border-delice {
     display: flex;
     justify-content: center;
     margin-top: 80px; }
     .main-delice .main-border-delice .border-delice {
       width: 270px; }
+      @media screen and (max-width: 768px) {
+        .main-delice .main-border-delice .border-delice {
+          width: 30%; } }
       @media screen and (max-width: 425px) {
         .main-delice .main-border-delice .border-delice {
           width: 20%; } }
     .main-delice .main-border-delice .border-left-entre {
       margin-right: 50px; }
+      @media screen and (max-width: 768px) {
+        .main-delice .main-border-delice .border-left-entre {
+          margin-right: 10px; } }
       @media screen and (max-width: 425px) {
         .main-delice .main-border-delice .border-left-entre {
           margin-right: 10px; } }
     .main-delice .main-border-delice .border-right-entre {
       margin-left: 50px; }
+      @media screen and (max-width: 768px) {
+        .main-delice .main-border-delice .border-right-entre {
+          margin-left: 10px; } }
       @media screen and (max-width: 425px) {
         .main-delice .main-border-delice .border-right-entre {
           margin-left: 10px; } }
     .main-delice .main-border-delice .border-left-plat {
       margin-right: 50px; }
+      @media screen and (max-width: 768px) {
+        .main-delice .main-border-delice .border-left-plat {
+          margin-right: 10px; } }
       @media screen and (max-width: 425px) {
         .main-delice .main-border-delice .border-left-plat {
           margin-right: 10px; } }
     .main-delice .main-border-delice .border-right-plat {
       margin-left: 50px; }
+      @media screen and (max-width: 768px) {
+        .main-delice .main-border-delice .border-right-plat {
+          margin-left: 10px; } }
       @media screen and (max-width: 425px) {
         .main-delice .main-border-delice .border-right-plat {
           margin-left: 10px; } }
     .main-delice .main-border-delice .border-left-dessert {
       margin-right: 50px; }
+      @media screen and (max-width: 768px) {
+        .main-delice .main-border-delice .border-left-dessert {
+          margin-right: 10px; } }
       @media screen and (max-width: 425px) {
         .main-delice .main-border-delice .border-left-dessert {
           margin-right: 10px; } }
     .main-delice .main-border-delice .border-right-dessert {
       margin-left: 50px; }
+      @media screen and (max-width: 768px) {
+        .main-delice .main-border-delice .border-right-dessert {
+          margin-left: 10px; } }
       @media screen and (max-width: 425px) {
         .main-delice .main-border-delice .border-right-dessert {
           margin-left: 10px; } }
-  .main-delice .flex {
+  @media screen and (max-width: 425px) {
+    .main-delice table {
+      font-size: 1em; } }
+  @media screen and (max-width: 425px) {
+    .main-delice tr {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center; } }
+  .main-delice .noms {
+    padding-left: 170px; }
+    @media screen and (max-width: 768px) {
+      .main-delice .noms {
+        padding-left: 50px; } }
+    @media screen and (max-width: 425px) {
+      .main-delice .noms {
+        padding-left: 10px;
+        padding-right: 10px; } }
+  .main-delice .entre .noms {
+    padding-right: 30px; }
+    @media screen and (max-width: 425px) {
+      .main-delice .entre .noms {
+        padding-right: 0; } }
+  .main-delice .plat .noms {
+    padding-right: 90px; }
+    @media screen and (max-width: 425px) {
+      .main-delice .plat .noms {
+        padding-right: 0; } }
+  .main-delice .desserts {
     display: flex;
-    width: 100%;
-    margin-left: 100px;
-    margin-top: 50px; }
-    @media screen and (max-width: 425px) {
-      .main-delice .flex {
-        margin: 20px 50px 20px 0px;
-        padding-left: 0;
-        flex-direction: column; } }
-    .main-delice .flex li {
-      margin-top: 10px; }
+    flex-direction: column;
+    padding-bottom: 50px; }
+    .main-delice .desserts .noms {
+      padding-right: 270px; }
       @media screen and (max-width: 425px) {
-        .main-delice .flex li {
-          margin: 20px;
-          text-align: center; } }
-  .main-delice .entre {
-    margin-right: 130px; }
-    @media screen and (max-width: 425px) {
-      .main-delice .entre {
-        margin: 0; } }
-  .main-delice .plat {
-    margin-right: 200px; }
-    @media screen and (max-width: 425px) {
-      .main-delice .plat {
-        margin: 0; } }
-  .main-delice .dessert {
-    margin-right: 400px; }
-    @media screen and (max-width: 425px) {
-      .main-delice .dessert {
-        margin: 0; } }
-  .main-delice .list-noms, .main-delice .list-prix {
-    font-size: 1.1em; }
-    @media screen and (max-width: 425px) {
-      .main-delice .list-noms, .main-delice .list-prix {
-        font-size: 0.8em;
-        display: flex; } }
-  @media screen and (max-width: 425px) {
-    .main-delice .entre-prix {
-      margin-top: 5px; } }
-  @media screen and (max-width: 425px) {
-    .main-delice .list-prix {
-      font-size: 1em;
-      justify-content: space-around; } }
-  @media screen and (max-width: 425px) {
-    .main-delice .list-noms {
-      justify-content: space-around; } }
+        .main-delice .desserts .noms {
+          padding-right: 0; } }
 
 /* ANIMATIONS DELICE */
 .h4-delice {
@@ -418,45 +518,122 @@ p {
   font-family: 'Kaushan Script', cursive;
   padding-top: 50px;
   font-size: 5em; }
+  @media screen and (max-width: 425px) {
+    .title-palette {
+      font-size: 2.5em; } }
 
 .main-palette {
   font-family: 'Kalam', cursive;
   margin: auto; }
   .main-palette .h4-palette {
     font-size: 1.4em; }
+    @media screen and (max-width: 425px) {
+      .main-palette .h4-palette {
+        font-size: 1.1em; } }
   .main-palette .main-border-palette {
     display: flex;
     justify-content: center;
     margin-top: 80px; }
     .main-palette .main-border-palette .border-palette {
       width: 300px; }
+      @media screen and (max-width: 768px) {
+        .main-palette .main-border-palette .border-palette {
+          width: 30%; } }
+      @media screen and (max-width: 425px) {
+        .main-palette .main-border-palette .border-palette {
+          width: 20%; } }
     .main-palette .main-border-palette .border-left-entre {
       margin-right: 90px; }
+      @media screen and (max-width: 768px) {
+        .main-palette .main-border-palette .border-left-entre {
+          margin-right: 70px; } }
+      @media screen and (max-width: 425px) {
+        .main-palette .main-border-palette .border-left-entre {
+          margin-right: 40px; } }
     .main-palette .main-border-palette .border-right-entre {
       margin-left: 90px; }
+      @media screen and (max-width: 768px) {
+        .main-palette .main-border-palette .border-right-entre {
+          margin-left: 70px; } }
+      @media screen and (max-width: 425px) {
+        .main-palette .main-border-palette .border-right-entre {
+          margin-left: 40px; } }
     .main-palette .main-border-palette .border-left-plat {
       margin-right: 50px; }
+      @media screen and (max-width: 768px) {
+        .main-palette .main-border-palette .border-left-plat {
+          margin-right: 30px; } }
+      @media screen and (max-width: 425px) {
+        .main-palette .main-border-palette .border-left-plat {
+          margin-right: 10px; } }
     .main-palette .main-border-palette .border-right-plat {
       margin-left: 50px; }
+      @media screen and (max-width: 768px) {
+        .main-palette .main-border-palette .border-right-plat {
+          margin-left: 30px; } }
+      @media screen and (max-width: 425px) {
+        .main-palette .main-border-palette .border-right-plat {
+          margin-left: 10px; } }
     .main-palette .main-border-palette .border-left-dessert {
       margin-right: 40px; }
+      @media screen and (max-width: 768px) {
+        .main-palette .main-border-palette .border-left-dessert {
+          margin-right: 20px; } }
+      @media screen and (max-width: 425px) {
+        .main-palette .main-border-palette .border-left-dessert {
+          margin-right: 10px; } }
     .main-palette .main-border-palette .border-right-dessert {
       margin-left: 40px; }
-  .main-palette .flex {
-    display: flex;
-    width: 100%;
-    margin-left: 100px;
-    margin-top: 50px; }
-    .main-palette .flex li {
-      margin-top: 10px; }
-  .main-palette .entre {
-    margin-right: 180px; }
-  .main-palette .plat {
-    margin-right: 90px; }
+      @media screen and (max-width: 768px) {
+        .main-palette .main-border-palette .border-right-dessert {
+          margin-left: 20px; } }
+      @media screen and (max-width: 425px) {
+        .main-palette .main-border-palette .border-right-dessert {
+          margin-left: 10px; } }
+  @media screen and (max-width: 425px) {
+    .main-palette table {
+      font-size: 1em; } }
+  @media screen and (max-width: 425px) {
+    .main-palette tr {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center; } }
+  .main-palette .noms {
+    padding-left: 100px; }
+    @media screen and (max-width: 768px) {
+      .main-palette .noms {
+        padding-left: 50px; } }
+    @media screen and (max-width: 425px) {
+      .main-palette .noms {
+        padding-left: 20px;
+        margin-right: 20px; } }
+  .main-palette .entre .noms {
+    padding-right: 280px; }
+    @media screen and (max-width: 768px) {
+      .main-palette .entre .noms {
+        padding-right: 100px; } }
+    @media screen and (max-width: 425px) {
+      .main-palette .entre .noms {
+        padding-right: 0; } }
+  .main-palette .plat .noms {
+    padding-right: 200px; }
+    @media screen and (max-width: 768px) {
+      .main-palette .plat .noms {
+        padding-right: 20px; } }
+    @media screen and (max-width: 425px) {
+      .main-palette .plat .noms {
+        padding-right: 0; } }
   .main-palette .dessert {
-    margin-right: 100px; }
-  .main-palette .list-noms, .main-palette .list-prix {
-    font-size: 1.1em; }
+    padding-bottom: 50px; }
+    .main-palette .dessert .noms {
+      padding-right: 210px; }
+      @media screen and (max-width: 768px) {
+        .main-palette .dessert .noms {
+          padding-right: 30px; } }
+      @media screen and (max-width: 425px) {
+        .main-palette .dessert .noms {
+          padding-right: 0; } }
 
 /* ANIMATIONS PALETTE */
 .h4-palette {
@@ -606,6 +783,11 @@ footer {
     list-style: none;
     color: #fdcb46;
     font-size: 1em; }
+    @media screen and (max-width: 425px) {
+      footer a {
+        font-size: 0.7em;
+        text-align: center;
+        padding-top: 5px; } }
 
 .btn-prochainement {
   width: 30%;
@@ -618,7 +800,10 @@ footer {
   justify-content: center; }
   @media screen and (max-width: 425px) {
     .btn-prochainement {
-      width: 60%; } }
+      width: 40%; } }
+  @media screen and (max-width: 320px) {
+    .btn-prochainement {
+      width: 50%; } }
   .btn-prochainement .txt-prochainement {
     padding-top: 25px;
     text-decoration: none;
@@ -626,6 +811,9 @@ footer {
     color: #fdcb46;
     font-family: 'Spartan', sans-serif;
     font-size: 1.6em; }
+    @media screen and (max-width: 425px) {
+      .btn-prochainement .txt-prochainement {
+        font-size: 1em; } }
 
 .btn-prochainement:after {
   overflow: hidden;
@@ -639,10 +827,22 @@ footer {
   animation: ellipsis steps(4, end) 2s infinite;
   content: "\2026";
   width: 0px; }
+  @media screen and (max-width: 768px) {
+    .btn-prochainement:after {
+      left: 360px;
+      top: 1255px; } }
   @media screen and (max-width: 425px) {
     .btn-prochainement:after {
       left: 190px;
-      top: 2355px; } }
+      top: 2345px; } }
+  @media screen and (max-width: 375px) {
+    .btn-prochainement:after {
+      left: 170px;
+      top: 2345px; } }
+  @media screen and (max-width: 320px) {
+    .btn-prochainement:after {
+      left: 140px;
+      top: 2345px; } }
 
 @keyframes ellipsis {
   to {

@@ -7,18 +7,23 @@
 .main-note{
     @include font-menu();
     @include color-font-note();
-    margin: 0 50px 0 50px;
-     @include mobile-only{
-         margin: 0;
-     }
+    
+     
     .h4-note{
         font-size: 1.8em;
+        @include tablet-only{
+            font-size: 1.3em;
+            text-align: center;
+        }
         @include mobile-only{
             font-size: 1.2em;
             text-align: center;
         }
     }
     table{
+        @include tablet-only{
+            font-size: 1.1em;
+        }
         @include mobile-only{
         font-size: 1em;
         }
@@ -32,8 +37,11 @@
         }
     }
     .noms{
-        padding-left: 50px;
+        padding-left: 100px;
         padding-top: 10px;
+        @include tablet-only{
+            padding-left: 30px;
+        }
         @include mobile-only{
             padding-left: 20px;
             margin-right: 20px;
@@ -43,6 +51,9 @@
     .entre{
         .noms{
         padding-right: 300px;
+        @include tablet-only{
+            padding-right: 50px;
+        }
         @include mobile-only{
             padding-right: 0;
         }
@@ -51,6 +62,9 @@
     .plats{
         .noms{
         padding-right: 320px;
+        @include tablet-only{
+            padding-right: 70px;
+        }
         @include mobile-only{
             padding-right: 0;
         }
@@ -62,39 +76,63 @@
         margin-top: 80px;
         .border-note{
             width: 250px;
+            @include tablet-only{
+                width: 30%;
+            }
             @include mobile-only{
                 width: 30%;
             }
         }
         .border-left-entre{
             margin-right: 100px;
+            @include tablet-only{
+                margin-right: 60px;
+            }
             @include mobile-only{
                 margin-right: 10px;;
             }
         }
         .border-right-entre{
-            margin-left: 10px;
+            margin-left: 100px;
+            @include tablet-only{
+                margin-left: 60px;
+            }
+            @include mobile-only{
+                margin-left: 10px;
+            }
         }
         .border-left-plat{
             margin-right: 70px;
+            @include tablet-only{
+                margin-right: 40px;
+            }
             @include mobile-only{
                 margin-right: 10px;
             }
         }
         .border-right-plat{
             margin-left: 70px;
+            @include tablet-only{
+                margin-left: 40px;
+            }
             @include mobile-only{
                 margin-left: 10px;
             }
         }
         .border-left-dessert{
             margin-right: 90px;
+            @include tablet-only{
+                margin-right: 50px;
+            }
             @include mobile-only{
                 margin-right: 10px;;
             }
         }
         .border-right-dessert{
             margin-left: 90px;
+            @include tablet-only{
+                margin-left: 50px;
+            }
             @include mobile-only{
                 margin-left: 10px;;
             }

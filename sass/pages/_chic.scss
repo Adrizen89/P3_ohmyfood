@@ -3,11 +3,23 @@
     font-size: 3em;
     @include color-font-chic();
     padding-top: 100px;
+    @include tablet-only{
+        font-size: 2.5em;
+    }
+    @include mobile-only{
+        font-size: 2em;
+    }
 }
 .main-chic{
     @include font-chic();
     .h4-chic{
         font-size: 1.3em;
+        @include tablet-only{
+            font-size: 1em;
+        }
+        @include mobile-only{
+            font-size: 0.8em;
+        }
     }
     .h4-chic-entre{
         color: #d08b3c;
@@ -25,42 +37,63 @@
         margin-bottom: 50px;
         .border-chic{
             width: 250px;
+            @include tablet-only{
+                width: 30%;
+            }
             @include mobile-only{
                 width: 30%;
             }
         }
         .border-right-entre{
             margin-left: 50px;
+            @include tablet-only{
+                margin-left: 10px;
+            }
             @include mobile-only{
                 margin-left: 10px;;
             }
         }
         .border-left-entre{
             margin-right: 50px;
+            @include tablet-only{
+                margin-right: 10px;
+            }
             @include mobile-only{
                 margin-right: 10px;;
             }
         }
         .border-right-plat{
             margin-left: 90px;
+            @include tablet-only{
+                margin-left: 40px;
+            }
             @include mobile-only{
                 margin-left: 10px;;
             }
         }
         .border-left-plat{
             margin-right: 90px;
+            @include tablet-only{
+                margin-right: 40px;
+            }
             @include mobile-only{
                 margin-right: 10px;;
             }
         }
         .border-left-dessert{
             margin-right: 80px;
+            @include tablet-only{
+                margin-right: 50px;
+            }
             @include mobile-only{
                 margin-right: 10px;;
             }
         }
         .border-right-dessert{
             margin-left: 80px;
+            @include tablet-only{
+                margin-left: 50px;
+            }
             @include mobile-only{
                 margin-left: 10px;;
             }
@@ -68,25 +101,19 @@
     }
     
     
-    .entre{
-        margin-right: 200px;
-        color: $color-chic-entre;
-    }
-    .plat{
-        color: $color-chic-plat;
-    }
-    .dessert{
-        color: $color-chic-dessert;
-    }
+   
 
     table{
+        @include tablet-only{
+            font-size: 0.9em;
+        }
         @include mobile-only{
         font-size: 0.8em;
         }
     }
     tr{
         @include mobile-only{
-            display: flex;
+        display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
@@ -95,31 +122,47 @@
     
     .noms{
         padding-left: 150px;
-        padding-top: 10px;
+        @include tablet-only{
+            padding-left: 50px;
+        }
         @include mobile-only{
-            padding-left: 0px;
-            margin-right: 0px;
+            padding-left: 20px;
+            margin-right: 20px;
         }
 
     }
+    .entre{
+        color: $color-chic-entre;
+        .noms{
+        padding-right: 200px;
+        @include tablet-only{
+            padding-right: 160px;
+        }
+        @include mobile-only{
+            padding-right: 0px;
+        }
+        }
+    }
+    .plat{
+        color: $color-chic-plat;
+        .noms{
+        padding-right: 50px;
+        @include tablet-only{
+            padding-right: 15px;
+        }
+        
+        @include mobile-only{
+            padding-right: 0;
+        }
+        }
+    }
+    .dessert{
+        color: $color-chic-dessert;
+        padding-bottom: 50px;
+    }
     
 }
-.entre{
-    .noms{
-    padding-right: 200px;
-    @include mobile-only{
-        padding-right: 0px;
-    }
-    }
-}
-.plat{
-    .noms{
-    padding-right: 50px;
-    @include mobile-only{
-        padding-right: 0;
-    }
-    }
-}
+
 
 
 /* ANIMATIONS CHIC A LA FR */

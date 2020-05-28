@@ -1,18 +1,32 @@
 .title-delice{
     @include color-font-papille();
     padding-top: 100px;
-    font-size: 2.7em;
+    font-size: 6em;
     @include font-papille;
+    @include tablet-only{
+        font-size: 4em;
+    }
+    @include mobile-only{
+        font-size: 3em;
+    }
 }
 
 .main-delice{
     @include font-menu();
     margin: auto;
+    
     .h4-delice{
         font-size: 1.4em;
+        @include tablet-only{
+            font-size: 1.2em;
+            text-align: center;
+        }
+        
         @include mobile-only{
             font-size: 1em;
             text-align: center;
+            margin-bottom: 0;
+           
         }
     }
     .main-border-delice{
@@ -21,110 +35,124 @@
         margin-top: 80px;
         .border-delice{
             width: 270px;
+            @include tablet-only{
+                width: 30%;
+            }
             @include mobile-only{
                 width: 20%;
             }
         }
         .border-left-entre{
             margin-right: 50px;
+            @include tablet-only{
+                margin-right: 10px;;
+            }
             @include mobile-only{
                 margin-right: 10px;;
             }
         }
         .border-right-entre{
             margin-left: 50px;
+            @include tablet-only{
+                margin-left: 10px;;
+            }
             @include mobile-only{
                 margin-left: 10px;;
             }
         }
         .border-left-plat{
             margin-right: 50px;
+            @include tablet-only{
+                margin-right: 10px;;
+            }
             @include mobile-only{
                 margin-right: 10px;;
             }
         }
         .border-right-plat{
             margin-left: 50px;
+            @include tablet-only{
+                margin-left: 10px;;
+            }
             @include mobile-only{
                 margin-left: 10px;;
             }
         }
         .border-left-dessert{
             margin-right: 50px;
+            @include tablet-only{
+                margin-right: 10px;;
+            }
             @include mobile-only{
                 margin-right: 10px;;
             }
         }
         .border-right-dessert{
             margin-left: 50px;
+            @include tablet-only{
+                margin-left: 10px;;
+            }
             @include mobile-only{
                 margin-left: 10px;;
             }
         }
     }
-    .flex{
-        display: flex;
-        width: 100%;
-        margin-left: 100px;
-        margin-top: 50px;
+    
+    
+    
+    table{
         @include mobile-only{
-            
-            margin: 20px 50px 20px 0px;
-            padding-left: 0;
-            flex-direction: column;
-        }
-            li{
-            margin-top: 10px;
-            @include mobile-only{
-                margin: 20px;
-                text-align: center;
-            }
-            }
-    }
-    .entre{
-        margin-right: 130px;
-        @include mobile-only{
-            margin: 0;
-        }
-        
-    }
-    .plat{
-        margin-right: 200px;
-        @include mobile-only{
-            margin: 0;
-        }
-    }
-    .dessert{
-        margin-right: 400px;
-        @include mobile-only{
-            margin: 0;
-        }
-    }
-    .list-noms, .list-prix{
-        font-size: 1.1em;
-        @include mobile-only{
-            font-size: 0.8em;
-            display: flex;
-        }
-    }
-    .entre-prix{
-        @include mobile-only{
-            margin-top: 5px;
-        }
-    }
-    .list-prix{
-        @include mobile-only{
-            
-            font-size: 1em;
-            justify-content: space-around;
-        }
-    }
-    .list-noms{
-        @include mobile-only{
-            justify-content: space-around;
+        font-size: 1em;
         }
     }
     
+    tr{
+        @include mobile-only{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        }
+    }
+    .noms{
+        padding-left: 170px;
+        @include tablet-only{
+            padding-left: 50px;
+        }
+        @include mobile-only{
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+    }
+    .entre{
+        .noms{
+        padding-right: 30px;
+        @include mobile-only{
+            padding-right: 0;
+        }
+        }
+    }
+    .plat{
+        .noms{
+        padding-right: 90px;
+        @include mobile-only{
+            padding-right: 0;
+        }
+        }
+    }
+    .desserts{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 50px;
+        .noms{
+            padding-right: 270px;
+
+            @include mobile-only{
+                padding-right: 0;
+            }
+        }
+    }
     
 }
 

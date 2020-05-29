@@ -198,29 +198,38 @@ footer{
  .btn-prochainement{
     
      width: 30%;
-     height: 80px;
+     height: auto;
      margin: auto;
      margin-bottom: 70px;
      border-radius: 10px;
      @include bg-color();
      display: flex;
      justify-content: center;
-     @include mobile-only{
+     /*@include mobile-only{
          width: 40%;
      }
      @include small-mobile{
          width: 50%;
-     }
+     }*/
      
      .txt-prochainement{
-         padding-top: 25px;
+         padding-top: 10%;
+         padding-bottom: 15%;
          text-decoration: none;
          list-style: none;
+         text-align: center;
          color: $color-bg-txt;
+         
          @include bg-font();
          font-size: 1.6em;
-         @include mobile-only{
+         @include tablet-only{
              font-size: 1em;
+         }
+         @include mobile-only{
+             font-size: 0.8em;
+         }
+         @include small-mobile{
+             font-size: 0.6em;
          }
          
      }
@@ -229,7 +238,8 @@ footer{
  .btn-prochainement:after {
     overflow: hidden;
     position: absolute;
-    right: 450px;
+    right: 38%;
+   
     
     color: $color-bg-txt;
     font-size: 3em;
@@ -239,9 +249,9 @@ footer{
     animation: ellipsis steps(4,end) 2s infinite;
     content: "\2026";
     width: 0px;
-    @include tablet-only{
-        left: 360px;
-        top: 1255px; 
+   @include tablet-only{
+        font-size: 2em;
+        
     }
     @include mobile-only{
         left: 190px;

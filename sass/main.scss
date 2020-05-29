@@ -205,78 +205,73 @@ footer{
      @include bg-color();
      display: flex;
      justify-content: center;
-     /*@include mobile-only{
-         width: 40%;
-     }
-     @include small-mobile{
-         width: 50%;
-     }*/
      
-     .txt-prochainement{
-         padding-top: 10%;
-         padding-bottom: 15%;
-         text-decoration: none;
-         list-style: none;
-         text-align: center;
-         color: $color-bg-txt;
-         
-         @include bg-font();
-         font-size: 1.6em;
-         @include tablet-only{
-             font-size: 1em;
-         }
-         @include mobile-only{
-             font-size: 0.8em;
-         }
-         @include small-mobile{
-             font-size: 0.6em;
-         }
-         
-     }
+     h4{
+        padding-top: 10px;
+        padding-bottom: 30px;
+        text-decoration: none;
+        list-style: none;
+        text-align: center;
+        color: $color-bg-txt;
+        
+        @include bg-font();
+        font-size: 1.6em;
+        @include tablet-only{
+            font-size: 1em;
+        }
+        @include mobile-only{
+            font-size: 0.8em;
+        }
+        @include small-mobile{
+            font-size: 0.6em;
+        }
+    }
+        
+    
+     
+     
+     
      
  }
  .btn-prochainement:after {
     overflow: hidden;
     position: absolute;
-    right: 38%;
-   
+    right: 48%;
+    top: 1250px;
     
     color: $color-bg-txt;
-    font-size: 3em;
+    font-size: 2em;
     display: inline-block;
-    vertical-align: bottom;
+    vertical-align: top;
     -webkit-animation: ellipsis steps(4,end) 2s infinite;      
     animation: ellipsis steps(4,end) 2s infinite;
     content: "\2026";
     width: 0px;
-   @include tablet-only{
-        font-size: 2em;
-        
-    }
+    
     @include mobile-only{
         left: 190px;
-        top: 2345px;
+        top: 2335px;
 
     }
     @include middle-mobile{
         left: 170px;
-        top: 2345px;
+        top: 2335px;
     }
     @include small-mobile{
         left : 140px;
-        top: 2345px;
+        top: 2335px;
     }
   }
   
   @keyframes ellipsis {
     to {
-      width: 60px;    
+      width: 50px;    
     }
   }
   
   @-webkit-keyframes ellipsis {
     to {
-      width: 60px;    
+      width: 50px;    
     }
   }
 

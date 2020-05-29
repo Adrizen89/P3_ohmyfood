@@ -797,16 +797,10 @@ footer {
   border-radius: 10px;
   background-color: #579c87;
   display: flex;
-  justify-content: center;
-  /*@include mobile-only{
-      width: 40%;
-  }
-  @include small-mobile{
-      width: 50%;
-  }*/ }
-  .btn-prochainement .txt-prochainement {
-    padding-top: 10%;
-    padding-bottom: 15%;
+  justify-content: center; }
+  .btn-prochainement h4 {
+    padding-top: 10px;
+    padding-bottom: 30px;
     text-decoration: none;
     list-style: none;
     text-align: center;
@@ -814,49 +808,47 @@ footer {
     font-family: 'Spartan', sans-serif;
     font-size: 1.6em; }
     @media screen and (max-width: 768px) {
-      .btn-prochainement .txt-prochainement {
+      .btn-prochainement h4 {
         font-size: 1em; } }
     @media screen and (max-width: 425px) {
-      .btn-prochainement .txt-prochainement {
+      .btn-prochainement h4 {
         font-size: 0.8em; } }
     @media screen and (max-width: 320px) {
-      .btn-prochainement .txt-prochainement {
+      .btn-prochainement h4 {
         font-size: 0.6em; } }
 
 .btn-prochainement:after {
   overflow: hidden;
   position: absolute;
-  right: 38%;
+  right: 48%;
+  top: 1250px;
   color: #fdcb46;
-  font-size: 3em;
+  font-size: 2em;
   display: inline-block;
-  vertical-align: bottom;
+  vertical-align: top;
   -webkit-animation: ellipsis steps(4, end) 2s infinite;
   animation: ellipsis steps(4, end) 2s infinite;
   content: "\2026";
   width: 0px; }
-  @media screen and (max-width: 768px) {
-    .btn-prochainement:after {
-      font-size: 2em; } }
   @media screen and (max-width: 425px) {
     .btn-prochainement:after {
       left: 190px;
-      top: 2345px; } }
+      top: 2335px; } }
   @media screen and (max-width: 375px) {
     .btn-prochainement:after {
       left: 170px;
-      top: 2345px; } }
+      top: 2335px; } }
   @media screen and (max-width: 320px) {
     .btn-prochainement:after {
       left: 140px;
-      top: 2345px; } }
+      top: 2335px; } }
 
 @keyframes ellipsis {
   to {
-    width: 60px; } }
+    width: 50px; } }
 @-webkit-keyframes ellipsis {
   to {
-    width: 60px; } }
+    width: 50px; } }
 @keyframes headshake {
   25% {
     transform: translateX(1%); }

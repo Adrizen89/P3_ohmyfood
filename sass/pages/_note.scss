@@ -1,14 +1,15 @@
+//TITRE NOTE MENU
 .title-note{
     font-size: 2.7em;
     color: $color_menu-note;
     @include font-note;
 }
-
+//ARTICLE NOTE
 .main-note{
     @include font-menu();
     @include color-font-note();
     
-     
+//TITRE ENTRE PLAT DESSERT
     .h4-note{
         font-size: 1.8em;
         @include tablet-only{
@@ -70,6 +71,7 @@
         }
         }
     }
+    //BORDER AND TITRE ENTRE PLAT DESSERT
     .main-border-note{
         display: flex;
         justify-content: center;
